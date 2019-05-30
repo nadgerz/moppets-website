@@ -1,0 +1,15 @@
+@import "../base/colors";
+@import "../base/measurements";
+@import "../abstracts/mixins";
+
+
+.nav-branding {
+  .logo {
+    @include border-layout-solid;
+
+    svg {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}

@@ -20,6 +20,8 @@ export const HiBubble = ( props ) =>
 
 export const Logo = ( props ) =>
   <svg
+    height={'9rem'}
+    width={'10.5rem'}
     className="svg logo"
     xmlns={xmlns}
     x="0px"

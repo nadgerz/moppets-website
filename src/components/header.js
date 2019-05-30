@@ -4,6 +4,8 @@ import React from "react"
 import Menu from "./menu.js"
 import {Logo} from "../assets/images/branding/svgs.js"
 
+import "../assets/css/components/header.scss"
+
 const Header = ({ siteTitle }) => (
   <header>
     <div className="header-content">
