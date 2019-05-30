@@ -2,7 +2,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-import "../assets/css/components/skill.scss"
+import "../assets/css/components/skills.scss"
 
 const Skills = () => (
   <div className={'skills'}>
