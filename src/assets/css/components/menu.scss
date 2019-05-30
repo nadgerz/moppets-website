@@ -8,19 +8,19 @@
   display: none;
 }
 
-  //Link {
-  //  border-bottom: 0;
-  //}
 
 .nav-branding {
-  border: 2px solid blue;
   flex-shrink: 0;
   position: relative;
+
+  a {
+    border-bottom: 0;
+  }
 
   ul {
     position: absolute;
     left: 100%;
-    bottom: 2px;
+    bottom: 0;
     padding-left: $sidebar-left-margin-right;
 
     display: flex;
@@ -29,18 +29,21 @@
       display: inline;
       margin-right: 1.5rem;
 
-      color: black;
       text-transform: uppercase;
       text-align: left;
       letter-spacing: .1rem;
       line-height: 2;
       list-style: none;
+      padding: .2rem;
 
       a {
-        padding: .5rem .7rem .4rem;
+        padding: .5rem .7rem .3rem;
 
         &:hover {
-          background: $color-highlight;
+          background: transparentize($color-highlight, .2);
+        }
+        &:active {
+          color: $color-text;
         }
       }
     }
@@ -54,9 +57,17 @@
 
 @media screen and (max-width: 550px) {
 
-  .header-right {
-    border-bottom: none;
+  header {
     background: none;
+
+    .header-right {
+      border-bottom: none;
+      background: none;
+    }
+
+    .nav-branding {
+      background: white;
+    }
   }
 
   .burger-menu {
@@ -72,8 +83,8 @@
       background-color: grey;
       height: $burger-menu-dash-height;
       width: $burger-menu-width;
-      margin-bottom: .5rem;
-      margin-top: .5rem;
+      margin-bottom: 5px;
+      margin-top: 5px;
     }
 
     &:hover span,
@@ -86,7 +97,7 @@
     background: rgba(255, 255, 255, 0.8);
     display: flex;
     flex-direction: row;
-    //justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: flex-end;
     //margin-left: $sidebar-left-margin-right;
     height: 0;
@@ -100,15 +111,16 @@
     margin-bottom: 7px;
   }
 
+  // the label tag here makes this whole construct work
   #menu-checkbox:checked + label {
 
     .menu-on {
       //position: absolute;
       //left: 100%;
-      //width: calc(100vw - #{$sidebar-left-margin-right} - #{$sidebar-left-width});
-      width: 25rem;
+      width: calc(100vw - #{$sidebar-left-margin-right} - #{$sidebar-left-width} - #{$main-container-padding-sides});
+      //width: 27rem;
       height: 100%;
-      //flex: 1 1;
+      //flex: 1 1 100%;
       @include border-bottom($color-grey-medium);
 
       li {
@@ -118,6 +130,7 @@
       }
     }
 
+    // the X to close the menu
     div.burger-menu-close {
       bottom: 1.8rem;
 
