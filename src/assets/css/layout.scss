@@ -12,7 +12,7 @@ body {
 
 .site-container {
   margin: 0 auto;
-  width: $main-container-width;
+  width: $main-container-full-width;
   max-width: 100%;
   padding: 0 $main-container-padding-sides;
 }
@@ -23,22 +23,26 @@ body {
 }
 
 
-.container-quarter-width{
+.container-quarter-width {
   width: $container-quarter-width;
   max-width: 100%;
 }
-.container-third-width{
+
+.container-third-width {
   width: $container-third-width;
   max-width: 100%;
 }
-.container-half-width{
+
+.container-half-width {
   width: $container-half-width;
   max-width: 100%;
 }
-.container-two-thirds-width{
+
+.container-two-thirds-width {
   width: $container-two-thirds-width;
   max-width: 100%;
 }
+
 .container-full-width {
   width: $container-full-width;
   max-width: 100%;
@@ -49,12 +53,11 @@ body {
 //---------------------------------------------------------
 
 header {
-  box-sizing: border-box;
+  position: fixed;
   height: $header-height;
   width: $main-container-full-width;
   max-width: 100%;
   padding: 0 $main-container-padding-sides;
-  position: fixed;
 
   /// centering
   left: 50%;
@@ -65,7 +68,7 @@ header {
   transform: translateX(-50%);
   z-index: 10;
 
-  //background-color: white;
+  background-color: white;
 
   h1 {
     display: none;
@@ -76,23 +79,51 @@ header {
     align-items: flex-end;
   }
 
-  #nav-branding, .header-right {
+  .nav-branding, .header-right {
     height: $header-height;
     @include border-layout-solid;
   }
 
+  .nav-branding {
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .header-right {
+    flex-shrink: 1;
+    //padding-left: $sidebar-left-margin-right;
+    width: calc(#{$container-full-width} + #{$sidebar-left-margin-right});
+
+    @include border-bottom($color-grey-medium);
+  }
 }
 
-.nav-branding {
-  height: $header-height;
-  flex-shrink: 0;
-  position: relative;
+
+//---------------------------------------------------------
+//  responsive HEADER
+
+
+@media screen and (max-width: 550px) {
+
+  .header-right {
+    border-bottom: none;
+    background: none;
+  }
 }
 
-.header-right {
-  background: lavender;
-  flex-shrink: 0;
-  padding-left: $sidebar-left-margin-right;
+//---------------------------------------------------------
 
-  @include border-bottom($color-grey-medium);
+//---------------------------------------------------------
+//   M A I N
+//---------------------------------------------------------
+
+#main {
+  @include border-layout-solid;
+  width: 100%;
+
+  // leave room for the fixed header
+  padding-top: calc(#{$header-height} + #{$bottom-margin-big});
+
+  // simple way for a sticky footer
+  height: calc(100vh - #{$footer-height});
 }
