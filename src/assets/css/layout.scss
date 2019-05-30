@@ -81,7 +81,7 @@ header {
 
   .nav-branding, .header-right {
     height: $header-height;
-    @include border-layout-solid;
+    //@include border-layout-solid;
   }
 
   .nav-branding {

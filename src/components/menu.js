@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 // import PropTypes from "prop-types"
 import React from "react"
-
+import "../assets/css/components/menu.scss"
 
 const Menu = () => (
   <nav id="nav">
