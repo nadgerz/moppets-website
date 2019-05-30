@@ -7,7 +7,7 @@ import {Logo} from "../assets/images/branding/svgs.js"
 import "../assets/css/components/header.scss"
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <header id={'header'}>
     <div className="header-content">
       <div className={"nav-branding sidebar-left"}>
         <h1>{siteTitle}</h1>

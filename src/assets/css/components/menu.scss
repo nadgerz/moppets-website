@@ -57,14 +57,12 @@
 
 @media screen and (max-width: 550px) {
 
-  header {
+  #header {
     background: none;
 
     .header-right {
-      border-bottom: none;
-      background: none;
+      border-bottom: 0;
     }
-
     .nav-branding {
       background: white;
     }
@@ -74,7 +72,7 @@
     display: block;
     position: absolute;
     bottom: 5px;
-    right: 0;
+    right: 5px;
     cursor: pointer;
     //transition: transform 0.3s linear;
 
