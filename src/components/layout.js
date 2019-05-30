@@ -29,7 +29,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <div className={'site-container'}>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
@@ -44,7 +44,7 @@ const Layout = ({ children }) => (
             © {new Date().getFullYear()} {data.site.siteMetadata.author}
           </footer>
         </div>
-      </>
+      </div>
     )}
   />
 )

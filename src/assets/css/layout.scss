@@ -1,3 +1,22 @@
 body {
   background-color: lavenderblush;
 }
+
+@import "base/colors";
+@import "base/measurements";
+@import "abstracts/mixins";
+
+//---------------------------------------------------------
+//   M A I N
+//---------------------------------------------------------
+
+.site-container {
+  margin: 0 auto;
+  width: $main-container-width;
+  max-width: 100%;
+  padding: 0 $main-container-padding-sides;
+}
+
+//---------------------------------------------------------
+//   H E A D E R
+//---------------------------------------------------------
