@@ -20,3 +20,32 @@ body {
 //---------------------------------------------------------
 //   H E A D E R
 //---------------------------------------------------------
+
+header {
+  box-sizing: border-box;
+  height: $header-height;
+  width: $main-container-full-width;
+  max-width: 100%;
+  padding: 0 $main-container-padding-sides;
+  position: fixed;
+
+  /// centering
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 10;
+
+  background-color: white;
+
+  h1 {
+    display: none;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: flex-end;
+  }
+}
