@@ -13,3 +13,22 @@
     }
   }
 }
+
+//---------------------------------------------------------
+//  responsive HEADER
+
+@media screen and (max-width: 550px) {
+
+  #header {
+    background: none;
+
+    .header-right {
+      border-bottom: 0;
+    }
+
+    .nav-branding {
+      background: white;
+    }
+  }
+}
+//---------------------------------------------------------
