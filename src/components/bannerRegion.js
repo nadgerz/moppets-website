@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
-
+import {HiBubble} from "../assets/images/branding/svgs"
 import "../assets/css/components/banner-region.scss"
 
 
@@ -9,7 +9,7 @@ const BannerRegion = ( { img } ) => (
   <div className="banner-region">
     
     <aside className="sidebar-left">
-      <svg className={".svg-hiBubble "}/>
+      <HiBubble className={".svg-hiBubble "}/>
     </aside>
     
     <div className="container-two-thirds-width">

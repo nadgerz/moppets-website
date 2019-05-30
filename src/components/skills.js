@@ -19,7 +19,7 @@ const Skills = () => (
           <li>SASS</li>
           <li>CSS</li>
           <li>HTML</li>
-          <li>GIT</li>
+          <li>Git</li>
           <li>Drupal</li>
         </ul>
       </div>

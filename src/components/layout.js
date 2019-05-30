@@ -37,6 +37,7 @@ const Layout = ( { children } ) => (
         <footer>
           <div className="sidebar-left"/>
           <div className={"container-half-width"}>
+            
             © {new Date().getFullYear()} {data.site.siteMetadata.author}
           </div>
         </footer>
