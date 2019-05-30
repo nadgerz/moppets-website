@@ -23,6 +23,7 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            author
           }
         }
       }
@@ -40,7 +41,7 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()} Kerstin Dengl
+            © {new Date().getFullYear()} {data.site.siteMetadata.author}
           </footer>
         </div>
       </>
