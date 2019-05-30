@@ -12,18 +12,21 @@ const Menu = () => (
           <li>
             <Link
               to="/about">
+              About
+              {/*{siteTitle}*/}
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact">
+              Contact
               {/*{siteTitle}*/}
             </Link>
           </li>
           <li>
             <Link
               to="/about">
-              {/*{siteTitle}*/}
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about">
+              Work
               {/*{siteTitle}*/}
             </Link>
           </li>
