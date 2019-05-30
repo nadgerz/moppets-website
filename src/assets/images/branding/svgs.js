@@ -3,9 +3,24 @@ import React from "react"
 
 const xmlns = "http://www.w3.org/2000/svg"
 
+
 export const HiBubble = ( props ) =>
   <svg
     className="svg HiBubble"
+    xmlns={xmlns}
+    x="0px"
+    y="0px"
+    viewBox="0 0 105 90"
+  >
+  
+  </svg>
+;
+
+
+
+export const Logo = ( props ) =>
+  <svg
+    className="svg logo"
     xmlns={xmlns}
     x="0px"
     y="0px"

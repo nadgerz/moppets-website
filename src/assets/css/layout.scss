@@ -18,7 +18,7 @@ body {
 }
 
 .sidebar-left {
-  @include border-layout-solid;
+  //@include border-layout-solid;
   width: $sidebar-left-width;
 }
 
