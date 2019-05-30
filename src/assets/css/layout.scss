@@ -17,6 +17,33 @@ body {
   padding: 0 $main-container-padding-sides;
 }
 
+.sidebar-left {
+  @include border-layout-solid;
+  width: $sidebar-left-width;
+}
+
+
+.container-quarter-width{
+  width: $container-quarter-width;
+  max-width: 100%;
+}
+.container-third-width{
+  width: $container-third-width;
+  max-width: 100%;
+}
+.container-half-width{
+  width: $container-half-width;
+  max-width: 100%;
+}
+.container-two-thirds-width{
+  width: $container-two-thirds-width;
+  max-width: 100%;
+}
+.container-full-width {
+  width: $container-full-width;
+  max-width: 100%;
+}
+
 //---------------------------------------------------------
 //   H E A D E R
 //---------------------------------------------------------
@@ -38,7 +65,7 @@ header {
   transform: translateX(-50%);
   z-index: 10;
 
-  background-color: white;
+  //background-color: white;
 
   h1 {
     display: none;
@@ -48,4 +75,24 @@ header {
     display: flex;
     align-items: flex-end;
   }
+
+  #nav-branding, .header-right {
+    height: $header-height;
+    @include border-layout-solid;
+  }
+
+}
+
+.nav-branding {
+  height: $header-height;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.header-right {
+  background: lavender;
+  flex-shrink: 0;
+  padding-left: $sidebar-left-margin-right;
+
+  @include border-bottom($color-grey-medium);
 }

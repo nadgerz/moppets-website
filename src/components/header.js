@@ -4,13 +4,18 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div>
-      <h1>
-        <Link
-          to="/">
-          {siteTitle}
-        </Link>
-      </h1>
+    <div className="header-content">
+      <div className={"nav-branding sidebar-left"}>
+        <h1>
+          <Link
+            to="/">
+            {siteTitle}
+          </Link>
+        </h1>
+      </div>
+      
+      <div className="container-full-width header-right" />
+      
     </div>
   </header>
 )
