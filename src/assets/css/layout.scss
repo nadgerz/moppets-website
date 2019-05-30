@@ -118,7 +118,7 @@ header {
 //---------------------------------------------------------
 
 #main {
-  @include border-layout-solid;
+  //@include border-layout-solid;
   width: 100%;
 
   // leave room for the fixed header
