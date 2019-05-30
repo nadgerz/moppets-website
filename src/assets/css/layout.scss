@@ -127,3 +127,17 @@ header {
   // simple way for a sticky footer
   height: calc(100vh - #{$footer-height});
 }
+
+
+//---------------------------------------------------------
+//   F O O T E R
+//---------------------------------------------------------
+
+footer {
+  border-top: 2px solid $color-grey-light;
+  padding-top: $bottom-margin-mini;
+  width: 100%;
+  max-width: 100%;
+  height: $footer-height;
+  color: $color-grey-medium;
+}
