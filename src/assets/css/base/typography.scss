@@ -1,0 +1,142 @@
+@import "colors.scss";
+
+@font-face {
+  font-family: "MainRegular";
+  src: url(../../fonts/BarlowSemiCondensed-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "DisplaySemiBold";
+  src: url(../../fonts/BarlowCondensed-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "DisplayMedium";
+  src: url(../../fonts/BarlowCondensed-Medium.ttf) format("truetype");
+}
+
+//---------------------------------------------------------
+//   SITE FONT STANDARDS
+//---------------------------------------------------------
+
+$font-size-paragraph: 1.5rem;
+
+$font-size-H1: 12rem;
+$font-size-H2: 3.3rem;
+$font-size-H3: 2rem;
+$font-size-H4: 2rem;
+
+$line-height-standard: 2.1rem;
+$line-height-double: 4.2rem;
+
+
+@mixin font-family-serif($font) {
+  font-family: $font, "Times New Roman", serif;
+};
+
+@mixin font-family-sans-serif($font) {
+  font-family: $font, "Helvetica", "Arial", sans-serif;
+};
+
+
+html {
+  font-size: 10px;
+  line-height: $line-height-standard;
+  /*Safari specific change*/
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  @include font-family-sans-serif(MainRegular);
+
+  font-size: $font-size-paragraph;
+  line-height: $line-height-standard;
+  margin: auto;
+}
+
+//---------------------------------------------------------
+//   RESPONSIVE
+
+
+@media screen and (max-width: 860px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+//---------------------------------------------------------
+
+
+h1 {
+  @include font-family-sans-serif(DisplaySemiBold);
+
+  font-size: $font-size-H1;
+  line-height: 1.2;
+  //margin-top: $line-height-standard;
+  //margin-bottom: $line-height-double;
+}
+
+h2 {
+  @include font-family-sans-serif(DisplayMedium);
+  //font-family: inherit;
+  font-size: $font-size-H2;
+  line-height: $line-height-double;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  //margin-top: $line-height-standard;
+  //margin-bottom: $line-height-standard;
+}
+
+h3 {
+  @include font-family-sans-serif(DisplaySemiBold);
+  font-size: $font-size-H3;
+  line-height: $line-height-standard;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  //margin-top: $line-height-standard;
+  //margin-bottom: 0;
+}
+
+h4 {
+  font-family: inherit;
+  font-size: $font-size-H4;
+  line-height: $line-height-standard;
+  //margin-top: $line-height-standard;
+  //margin-bottom: 0;
+}
+
+ul, ol, pre, table, blockquote {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin: .7rem 0;
+}
+
+//---------------------------------------------------------
+//  SHARED ELEMENTS
+
+a {
+  @include font-family-sans-serif(DisplayMedium);
+  text-decoration: none;
+  color: $color-grey-medium;
+
+  &:hover {
+    border-bottom: 4px solid $color-highlight;
+  }
+
+  &:active {
+    color: $color-text;
+  }
+}
+
+//---------------------------------------------------------
