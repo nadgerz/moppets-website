@@ -1,0 +1,24 @@
+@import "../base/colors";
+@import "../base/measurements";
+@import "../abstracts/mixins";
+
+.banner-region {
+  display: flex;
+  align-items: flex-start;
+  //flex-flow: row wrap;
+  padding-bottom: $bottom-margin-medium;
+  margin-bottom: $bottom-margin-small;
+
+  @include border-bottom($color-grey-light);
+
+  aside {
+    min-height: 9rem;
+    background-color: $color-highlight;
+    margin-right: $sidebar-margin-right;
+
+    .svg-hiBubble {
+      margin-right: -1.3rem;
+      padding-top: .7rem;
+    }
+  }
+}
