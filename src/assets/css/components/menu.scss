@@ -1,0 +1,140 @@
+@import "../base/colors";
+@import "../base/measurements";
+@import "../abstracts/mixins";
+
+
+#menu-checkbox,
+.toggle {
+  display: none;
+}
+
+nav {
+  a {
+    border-bottom: 0;
+  }
+
+  ul {
+    position: absolute;
+    //border: 2px solid blue;
+    left: 100%;
+    bottom: 0;
+    padding-left: $sidebar-left-margin-right;
+
+    display: flex;
+
+    li {
+      display: inline;
+      margin-right: 1.5rem;
+      color: black;
+      text-align: left;
+      letter-spacing: .1rem;
+      line-height: 2;
+      list-style: none;
+
+      a {
+        display: inline;
+        padding: .5rem .7rem;
+
+        &:hover {
+          background: $color-highlight;
+        }
+      }
+    }
+  }
+}
+
+
+//---------------------------------------------------------
+//  responsive BURGER MENU
+
+
+@media screen and (max-width: 550px) {
+
+  .header-right {
+    border-bottom: none;
+    background: none;
+  }
+
+  .burger-menu {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    cursor: pointer;
+    //transition: transform 0.3s linear;
+
+    span {
+      display: block;
+      background-color: grey;
+      height: $burger-menu-dash-height;
+      width: $burger-menu-width;
+      margin-bottom: .5rem;
+      margin-top: .5rem;
+    }
+
+    &:hover span,
+    &:focus span {
+      background: black;
+    }
+  }
+
+  .menu {
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: row;
+    //justify-content: space-evenly;
+    align-items: flex-end;
+    //margin-left: $sidebar-left-margin-right;
+    height: 0;
+    width: 0;
+    transition: width 0.3s linear;
+  }
+
+  .menu-off li {
+    opacity: 0;
+    visibility: hidden;
+    margin-bottom: 7px;
+  }
+
+  #menu-checkbox:checked + label {
+
+    .menu-on {
+      //position: absolute;
+      //left: 100%;
+      //width: calc(100vw - #{$sidebar-left-margin-right} - #{$sidebar-left-width});
+      width: 25rem;
+      height: 100%;
+      //flex: 1 1;
+      @include border-bottom($color-grey-medium);
+
+      li {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.5s linear;
+      }
+    }
+
+    div.burger-menu-close {
+      bottom: 1.8rem;
+
+      span {
+        background-color: black;
+        margin: 0;
+        transition: all 0.3s linear;
+
+        &:first-child {
+          // making the lines meet at their true center by accounting for their height
+          transform: rotate(45deg) translateY(calc(#{$burger-menu-dash-height} / 2));
+        }
+
+        &:last-child {
+          transform: rotate(-45deg) translateY(calc(#{$burger-menu-dash-height} / -2));
+        }
+
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+}
