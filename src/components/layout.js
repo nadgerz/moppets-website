@@ -11,8 +11,8 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 // import "./layout.css"
-// import "../assets/css/main.scss"
 import "../assets/css/layout.scss"
+import "../assets/css/base/resets.scss"
 import "../assets/css/base/typography.scss"
 
 
