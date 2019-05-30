@@ -1,11 +1,7 @@
 //////  B A S E
 //@import "base/animations.scss";
-import "base/colors.scss";
-import "base/typography.scss";
-
-//////  A B S T R A C T S
-import "abstracts/mixins.scss";
-import "abstracts/mixins-standards.scss";
+@import "./base/colors.scss";
+@import "./base/typography.scss";
 
 //////  L A Y O U T
-import "./layout.scss";
+@import "./layout.scss";
