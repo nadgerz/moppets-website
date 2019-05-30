@@ -20,6 +20,7 @@ body {
 .sidebar-left {
   //@include border-layout-solid;
   width: $sidebar-left-width;
+  flex-shrink: 0;
 }
 
 
@@ -47,6 +48,8 @@ body {
   width: $container-full-width;
   max-width: 100%;
 }
+
+
 
 //---------------------------------------------------------
 //   H E A D E R
@@ -84,9 +87,9 @@ header {
     //@include border-layout-solid;
   }
 
-  .nav-branding {
-    flex-shrink: 0;
-  }
+  //.nav-branding {
+  //  flex-shrink: 0;
+  //}
 
   .header-right {
     flex-shrink: 1;
@@ -116,7 +119,7 @@ header {
 //   M A I N
 //---------------------------------------------------------
 
-#main {
+main {
   //@include border-layout-solid;
   width: 100%;
 
@@ -124,8 +127,22 @@ header {
   padding-top: calc(#{$header-height} + #{$bottom-margin-big});
 
   // simple way for a sticky footer
-  height: calc(100vh - #{$footer-height});
+  min-height: calc(100vh - #{$footer-height});
 }
+
+//---------------------------------------------------------
+//  responsive MAIN
+
+
+@media screen and (max-width: 550px) {
+
+  #main {
+    padding-top: 6rem;
+  }
+}
+
+//---------------------------------------------------------
+
 
 
 //---------------------------------------------------------

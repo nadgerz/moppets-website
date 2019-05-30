@@ -1,5 +1,5 @@
 // import { Link } from "gatsby"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import React from "react"
 
 import "../assets/css/components/skills.scss"
@@ -7,30 +7,31 @@ import "../assets/css/components/skills.scss"
 const Skills = () => (
   <div className={'skills'}>
     
-    <!-- T E C H -->
-    <section className="tech-stack skill">
+    {/* //  T E C H */}
+    <section className="skill">
       <aside className="sidebar-left">
-        <h3 className="tech">Tech</h3>
+        <h3>Tech</h3>
       </aside>
       <div className="container-full-width">
-        <ul>
+        <ul className={'tech-stack stack'}>
           <li>React JS</li>
           <li>JS</li>
           <li>SASS</li>
           <li>CSS</li>
           <li>HTML</li>
           <li>GIT</li>
+          <li>Drupal</li>
         </ul>
       </div>
     </section>
   
-    <!-- S O F T W A R E -->
-    <section className="software-stack skill">
+    {/*// S O F T W A R E */}
+    <section className="skill">
       <aside className="sidebar-left">
         <h3 className="software">Software</h3>
       </aside>
       <div className="container-full-width">
-        <ul>
+        <ul className={'software-stack stack'}>
           <li>Jetbrains Webstorm IDE</li>
           <li>Sublime Text</li>
           <li>Jira</li>
@@ -53,4 +54,4 @@ const Skills = () => (
 //   siteTitle: `my site`,
 // }
 
-export default Header
+export default Skills

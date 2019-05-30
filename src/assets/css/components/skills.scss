@@ -2,50 +2,44 @@
 @import "../base/measurements";
 @import "../abstracts/mixins";
 
-.tech-stack,
-.software-stack,
-.recent-work {
+
+.skill {
+  //@include border-layout-solid;
   display: flex;
   align-items: flex-start;
-  //justify-content: center;
+  padding-bottom: $bottom-margin-mini;
   margin-bottom: $bottom-margin-small;
 
-  .text-container-full-width {
-    width: $container-full-width;
-    display: flex;
-    flex-flow: row wrap;
+  .sidebar-left {
+    margin-right: $sidebar-margin-right;
   }
 
-  .container-half-width {
-    width: $container-half-width;
-    background: lavenderblush;
 
-    &:first-child {
-      margin-right: $container-margin;
-    }
-  }
-  ul {
-    background: lavenderblush;
-  }
+  //.container-half-width {
+  //  width: $container-half-width;
+  //  background: lavenderblush;
+  //
+  //  &:first-child {
+  //    margin-right: $container-margin;
+  //  }
+  //}
 
   li {
     @include removeListStyling;
   }
-
   @include border-bottom($color-grey-light);
 }
 
-.tech-stack,
-.software-stack {
-  ul li {
+
+.stack {
+  li {
     display: inline-block;
-    margin-right: .7rem;
+    margin: -1rem .7rem .7rem 0;
     padding: .2rem .8rem .5rem;
     @include border1px($color-grey-medium);
-    margin-bottom: .7rem;
 
-    &:last-child {
-      margin-bottom: $bottom-margin-small;
-    }
+    //&:last-child {
+    //    margin-bottom: $bottom-margin-small;
+    //  }
   }
 }

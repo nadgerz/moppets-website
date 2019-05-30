@@ -16,7 +16,7 @@ import "../assets/css/base/resets.scss"
 import "../assets/css/base/typography.scss"
 
 
-const Layout = ({ children }) => (
+const Layout = ( { children } ) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -29,14 +29,17 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div className={'site-container'}>
-        <Header siteTitle={data.site.siteMetadata.title} />
+      <div className={"site-container"}>
+        <Header siteTitle={data.site.siteMetadata.title}/>
         
-          <main id={'main'}>{children}</main>
+        <main id={"main"}>{children}</main>
         
-          <footer>
+        <footer>
+          <div className="sidebar-left"/>
+          <div className={"container-half-width"}>
             © {new Date().getFullYear()} {data.site.siteMetadata.author}
-          </footer>
+          </div>
+        </footer>
       </div>
     )}
   />
