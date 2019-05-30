@@ -37,9 +37,5 @@
     margin: -1rem .7rem .7rem 0;
     padding: .2rem .8rem .5rem;
     @include border1px($color-grey-medium);
-
-    //&:last-child {
-    //    margin-bottom: $bottom-margin-small;
-    //  }
   }
 }

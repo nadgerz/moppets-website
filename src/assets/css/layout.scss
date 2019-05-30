@@ -120,11 +120,11 @@ main {
   width: 100%;
 
   // leave room for the fixed header
-  padding-top: $header-height;
+  padding-top: calc(#{$bottom-margin-small} + #{$bottom-margin-big});
   //padding-top: calc(#{$header-height} + #{$bottom-margin-big});
 
   // simple way for a sticky footer
-  min-height: calc(100vh - #{$footer-height});
+  min-height: calc(100vh - #{$header-height} - #{$footer-height});
 }
 
 //---------------------------------------------------------
@@ -133,9 +133,9 @@ main {
 
 @media screen and (max-width: 550px) {
 
-  #main {
-    padding-top: 6rem;
-  }
+  //#main {
+  //  padding-top: 6rem;
+  //}
 }
 
 //---------------------------------------------------------
