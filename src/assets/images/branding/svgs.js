@@ -6,6 +6,7 @@ const xmlns = "http://www.w3.org/2000/svg"
 export const HiBubble = () =>
   <svg
     className="svg hiBubble"
+    aria-hidden={'true'}
     xmlns={xmlns}
     x="0px"
     y="0px"
@@ -20,6 +21,7 @@ export const HiBubble = () =>
 export const Logo = ( props ) =>
   <svg
     className="svg logo"
+    aria-hidden={'true'}
     xmlns={xmlns}
     x="0px"
     y="0px"
