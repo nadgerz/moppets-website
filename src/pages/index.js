@@ -6,8 +6,10 @@ import Layout from "../components/layout"
 import BannerRegion from "../components/bannerRegion"
 import Skills from "../components/skills"
 import Portfolio from "../components/portfolio"
+import "../assets/css/pages/index.scss"
 
 import { HiBubble } from "../assets/images/branding/svgs"
+import Oranges from "../assets/images/oranges.png"
 
 
 const homeData = {
@@ -26,6 +28,9 @@ const IndexPage = () => (
     <BannerRegion data={homeData}/>
     <Skills/>
     <Portfolio/>
+    <div className={"container-two-thirds-width"}>
+      <img className={'imgOranges'} src={Oranges} alt="cute Oranges"/>
+    </div>
   </Layout>
 )
 

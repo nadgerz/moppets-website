@@ -1,0 +1,8 @@
+@import "../base/colors";
+@import "../base/measurements";
+@import "../abstracts/mixins";
+
+.imgOranges {
+  height: 100%;
+  margin-left: calc(#{$sidebar-margin-right} + #{$sidebar-left-width});
+}
