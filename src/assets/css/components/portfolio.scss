@@ -1,0 +1,27 @@
+@import "../base/colors";
+@import "../base/measurements";
+@import "../abstracts/mixins";
+
+.recent-work {
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    //@include border-layout-solid;
+
+    img {
+      @include border-layout-solid;
+      max-width: 100%;
+      max-height: 100%;
+      align-self: flex-end;
+    }
+
+    .clients li {
+      line-height: 2;
+    }
+
+    .download {
+      height: 9rem;
+    }
+  }
+}
