@@ -35,7 +35,7 @@ export const cvData = [
     title: "Infographic Designer, dpa (German Press Agency)",
     description:
     <p>
-      <strong>print and online media</strong>
+      <strong><span>print and online media</span></strong>
       <ul>
         <li>daily news graphics, diagrams, maps, edugraphics, and Icons for print newspapers and school books</li>
         <li>illustrations, infographics, game graphics, plus interactive online edugraphics and games for 6 to 13 year
@@ -51,9 +51,8 @@ export const cvData = [
     time:
       {
         range: "2009 - 2014",
-        place: 'University of Applied Sciences Augsburg'
       },
-    title: "B.A. Communications Design",
+    title: "B.A. Communications Design, University of Applied Sciences Augsburg",
     description: "B.A. with a specialisation in infographic design",
   },
   {
