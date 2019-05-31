@@ -3,6 +3,9 @@
 @import "../abstracts/mixins";
 
 .contact {
+  h2 {
+    text-align: left;
+  }
 
   aside {
     margin-right: $sidebar-margin-right;
