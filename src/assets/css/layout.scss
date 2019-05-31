@@ -19,7 +19,6 @@
   flex-shrink: 0;
 }
 
-
 .container-quarter-width {
   width: $container-quarter-width;
   max-width: 100%;
@@ -120,8 +119,8 @@ main {
   width: 100%;
 
   // leave room for the fixed header
-  padding-top: calc(#{$bottom-margin-small} + #{$bottom-margin-big});
-  //padding-top: calc(#{$header-height} + #{$bottom-margin-big});
+  //padding-top: calc(#{$bottom-margin-small} + #{$bottom-margin-big});
+  padding-top: calc(#{$header-height} + #{$bottom-margin-big});
 
   // simple way to get a sticky footer
   min-height: calc(100vh - #{$header-height} - #{$footer-height});

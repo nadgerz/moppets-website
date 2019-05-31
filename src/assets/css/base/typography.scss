@@ -63,7 +63,6 @@ body {
     font-size: 8px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   html {
     font-size: 12px;
@@ -71,7 +70,6 @@ body {
 }
 
 //---------------------------------------------------------
-
 
 h1 {
   @include font-family-sans-serif(DisplaySemiBold);
@@ -89,7 +87,7 @@ h2 {
   line-height: $line-height-double;
   letter-spacing: 1px;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   //margin-top: $line-height-standard;
   //margin-bottom: $line-height-standard;
 }
