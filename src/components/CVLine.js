@@ -38,7 +38,7 @@ CVLine.propTypes = {
 
 CVLine.defaultProps = {
   range: `date`,
-  place: `place`,
+  place: ``,
   siteTitle: `job title`,
   description: `description copy`,
 }

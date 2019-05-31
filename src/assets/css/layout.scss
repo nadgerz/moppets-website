@@ -60,10 +60,10 @@ img {
 
 header {
   position: fixed;
-  height: $header-height;
+  height: calc(#{$header-height} + .5rem);
   width: $main-container-full-width;
   max-width: 100%;
-  padding: 0 $main-container-padding-sides;
+  padding: 0 $main-container-padding-sides .5rem;
 
   /// centering
   left: 50%;
@@ -85,7 +85,8 @@ header {
     align-items: flex-end;
   }
 
-  .nav-branding, .header-right {
+  .nav-branding,
+  .header-right {
     height: $header-height;
     //@include border-layout-solid;
   }
@@ -146,7 +147,6 @@ main {
 }
 
 //---------------------------------------------------------
-
 
 
 //---------------------------------------------------------

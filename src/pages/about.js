@@ -36,8 +36,8 @@ const About = () => (
         
         <div className="container-full-width">
           {
-            cvData.map( ( data, i ) => {
-              return <CVLine key={`CV` + i}
+            cvData.map( ( data ) => {
+              return <CVLine key={data.id}
                              data={data}/>
             } )
           }
