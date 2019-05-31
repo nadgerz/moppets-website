@@ -3,14 +3,31 @@
 @import "../abstracts/mixins";
 
 .nav-branding {
-  .logo {
-    a {
+  //&:hover {
+  //  background: paleturquoise;
+  //  transition: all 0.7s linear;
+  //
+  //  //background: aquamarine;
+  //}
+  a {
+    border-bottom: 0;
+
+    &:hover,
+    &:active {
       border-bottom: 0;
     }
+  }
 
-    svg {
-      max-height: 100%;
-      max-width: 100%;
+  svg.logo {
+    fill: $color-highlight;
+    max-height: 100%;
+    max-width: 100%;
+
+    &:hover {
+      path.bubble {
+        fill: paleturquoise;
+        transition: fill 0.5s ease;
+      }
     }
   }
 }
@@ -26,9 +43,11 @@
     .header-right {
       border-bottom: 0;
     }
+
     .nav-branding {
       background: rgba(255, 255, 255, 0.8);
     }
   }
 }
+
 //---------------------------------------------------------
