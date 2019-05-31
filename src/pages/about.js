@@ -3,14 +3,24 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import BannerRegion from "../components/bannerRegion"
 import "../assets/css/pages/about.scss"
+import { HiBubble } from "../assets/images/branding/svgs"
 
+const aboutData = {
+  img: <HiBubble/>,
+  text: <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+    "        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quat. luptatum zzril
+    "        delenit augue duis dolore te feugait nulla facilisi.
+  </p>,
+}
 
 const About = () => (
   <Layout>
+    <SEO title="About Me"/>
     <div className="about" id="about">
       
-      <SEO title="About Me"/>
+      <BannerRegion data={aboutData}/>
       <h2>Hi from the About Me page</h2>
       <p>Welcome to About</p>
     
