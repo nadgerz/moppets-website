@@ -5,10 +5,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BannerRegion from "../components/bannerRegion"
 import "../assets/css/pages/about.scss"
-import { HiBubble } from "../assets/images/branding/svgs"
+import { Portrait } from "../assets/images/branding/svgs"
 
 const aboutData = {
-  img: <HiBubble/>,
+  img: <Portrait/>,
   text: <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
     "        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quat. luptatum zzril
     "        delenit augue duis dolore te feugait nulla facilisi.
