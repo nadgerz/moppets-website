@@ -5,6 +5,9 @@
 .recent-work {
   display: flex;
   align-items: flex-start;
+  padding-bottom: $bottom-margin-small;
+  margin-bottom: $sidebar-left-width;
+  @include border-bottom($color-grey-light);
 
   aside {
     margin-right: $sidebar-margin-right;
@@ -14,8 +17,6 @@
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
-    //@include border-layout-solid;
-    margin-bottom: $bottom-margin-medium;
 
     div {
       //@include border-layout-solid;
@@ -49,7 +50,8 @@
         h2 {
           color: $color-text;
         }
-        &:hover{
+
+        &:hover {
           border: 3px solid $color-highlight;
         }
 

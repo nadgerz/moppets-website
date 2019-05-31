@@ -2,9 +2,6 @@
 @import "../base/measurements";
 @import "../abstracts/mixins";
 
-
-
-
 .image-container {
   .imgOranges {
     height: auto;
@@ -15,7 +12,6 @@
 
 @media screen and (max-width: 550px) {
   .image-container {
-    margin: 0 auto;
     .imgOranges {
       margin-left: 0;
     }

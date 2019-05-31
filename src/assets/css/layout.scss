@@ -52,6 +52,7 @@
 img {
   max-height: 39rem;
   width: auto;
+  max-width: 100%;
 }
 
 //---------------------------------------------------------
@@ -135,15 +136,15 @@ main {
   min-height: calc(100vh - #{$footer-height});
 }
 
+
 //---------------------------------------------------------
 //  responsive MAIN
 
 
 @media screen and (max-width: 550px) {
-
-  //#main {
-  //  padding-top: 6rem;
-  //}
+  .image-container {
+    margin: 0 auto;
+  }
 }
 
 //---------------------------------------------------------

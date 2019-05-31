@@ -7,11 +7,26 @@
   .CV {
     display: flex;
     align-items: stretch;
+    padding-bottom: $bottom-margin-small;
+    margin-bottom: $bottom-margin-big;
 
     aside {
       margin-right: $sidebar-margin-right;
     }
+
     .container-full-width {
     }
+  }
+
+  .imgPineapple {
+    //height: 100%;
+    //width: auto;
+    //margin-left: calc(#{$sidebar-margin-right} + #{$sidebar-left-width});
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .image-container {
+    margin: 0 auto;
   }
 }

@@ -8,6 +8,7 @@ import CVLine from "../components/CVLine"
 import { Portrait } from "../assets/images/branding/svgs"
 import {cvData} from "../components/cvLineData"
 import "../assets/css/pages/about.scss"
+import Pinapple from "../assets/images/pineapple.png"
 
 
 const aboutData = {
@@ -43,6 +44,10 @@ const About = () => (
           }
         </div>
       </section>
+  
+      <div className={"container-two-thirds-width image-container"}>
+        <img className={'imgPineapple'} src={Pinapple} alt="Senorita Pinapple"/>
+      </div>
     </div>
   </Layout>
 )
