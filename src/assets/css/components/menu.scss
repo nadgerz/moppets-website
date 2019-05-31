@@ -34,10 +34,12 @@
       letter-spacing: .1rem;
       line-height: 2;
       list-style: none;
-      padding: .2rem;
+      padding: .4rem;
 
       a {
-        padding: .4rem .7rem .5rem;
+        padding: .4rem .7rem .1rem;
+        font-size: 2rem;
+        //margin-bottom: 2px;
 
         &:hover {
           background: transparentize($color-highlight, .2);
@@ -95,7 +97,7 @@
   .menu-off li {
     opacity: 0;
     visibility: hidden;
-    margin-bottom: 7px;
+    //margin-bottom: 7px;
   }
 
   // the label tag here makes this whole construct work
@@ -114,6 +116,7 @@
         opacity: 1;
         visibility: visible;
         transition: all 0.5s linear;
+        margin-right: 0;
       }
     }
 
