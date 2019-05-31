@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import BannerRegion from "../components/bannerRegion"
 import CVLine from "../components/CVLine"
 import { Portrait } from "../assets/images/branding/svgs"
+import {cvData} from "../components/cvLineData"
 import "../assets/css/pages/about.scss"
 
 
@@ -19,26 +20,6 @@ const aboutData = {
     </p>,
 }
 
-const cvData = [
-  {
-    time:
-      {
-        range: "2019",
-        place: "place",
-      },
-    title: "title",
-    description: "description",
-  },
-  {
-    time:
-      {
-        range: "2018",
-        place: "place2",
-      },
-    title: "title2",
-    description: "description2",
-  },
-]
 
 const About = () => (
   <Layout>
