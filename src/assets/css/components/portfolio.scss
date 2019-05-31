@@ -43,9 +43,16 @@
         margin-bottom: $bottom-margin-mini;
         @include border1px($color-grey-dark);
 
+        //a {
+        //  border-bottom: 0;
+        //}
         h2 {
           color: $color-text;
         }
+        &:hover{
+          border: 3px solid $color-highlight;
+        }
+
       }
     }
   }
