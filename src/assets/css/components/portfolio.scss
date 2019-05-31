@@ -3,25 +3,58 @@
 @import "../abstracts/mixins";
 
 .recent-work {
+  display: flex;
+  align-items: flex-start;
+
+  aside {
+    margin-right: $sidebar-margin-right;
+  }
+
   .container {
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
     //@include border-layout-solid;
+    margin-bottom: $bottom-margin-medium;
 
-    img {
-      @include border-layout-solid;
-      max-width: 100%;
-      max-height: 100%;
-      align-self: flex-end;
+    div {
+      //@include border-layout-solid;
+      margin-bottom: $bottom-margin-small;
+
+      &:first-child {
+        margin-right: $container-margin;
+      }
     }
 
-    .clients li {
-      line-height: 2;
+    .clients {
+      li {
+        line-height: 2;
+        list-style: none;
+      }
     }
 
     .download {
       height: 9rem;
+      //@include border-layout-dashed;
+
+      img {
+        //@include border-layout-solid;
+        max-width: 100%;
+        max-height: 100%;
+        //align-self: flex-end;
+      }
+    }
+  }
+}
+
+//---------------------------------------------------------
+//  responsive
+
+
+@media screen and (max-width: 550px) {
+  .container {
+    div :first-child {
+      margin-right: 0;
     }
   }
 }
