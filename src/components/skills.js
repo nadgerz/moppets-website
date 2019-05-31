@@ -6,7 +6,7 @@ import "../assets/css/components/skills.scss"
 
 const Skills = () => (
   <div className={'skills'}>
-    
+    skills
     {/* //  T E C H */}
     <section className="skill">
       <aside className="sidebar-left">

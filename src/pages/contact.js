@@ -3,27 +3,29 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {GitHub, CodePen, LinkedIn, Mail} from "../assets/images/socialIcons"
+import { GitHub, CodePen, LinkedIn, Mail } from "../assets/images/socialIcons"
 import "../assets/css/components/contact.scss"
 
 
 const Contact = () => (
   <Layout>
     <SEO title="Contact me"/>
-    <div className={'contact'} id={'contact'}>
+    <div className={"contact"} id={"contact"}>
       
-      <aside className={"sidebar-left"}/>
-      
-      <div className={'container-two-thirds-width'}>
-        <h2>GET IN TOUCH</h2>
-        <p>Welcome to contact</p>
+      <div className={"contact-banner"}>
+        <aside className={"sidebar-left"}/>
+        
+        <div className={"container-two-thirds-width"}>
+          <h2>GET IN TOUCH</h2>
+          <p>Drop me a line in case you'd like to start working together</p>
+        </div>
       </div>
       
       <section className="get-in-touch">
         <aside className={"sidebar-left"}/>
         
-        <div className={'container-two-thirds-width'}>
-          <ul className={'social-icons'}>
+        <div className={"container-two-thirds-width"}>
+          <ul className={"social-icons"}>
             <li className="mailto">
               <a href="mailto:kerstin.dengl@gmail.com">
                 <Mail/>
@@ -39,17 +41,15 @@ const Contact = () => (
                 <GitHub/>
               </a>
             </li>
-            <li>
-              <a href="/">
-                <CodePen/>
-              </a>
-            </li>
+            {/*<li>*/}
+            {/*  <a href="/">*/}
+            {/*    <CodePen/>*/}
+            {/*  </a>*/}
+            {/*</li>*/}
           </ul>
         </div>
       </section>
-    
     </div>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

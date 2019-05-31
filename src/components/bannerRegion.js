@@ -5,7 +5,6 @@ import "../assets/css/components/banner-region.scss"
 
 
 const BannerRegion = ( { img } ) => (
-  
   <div className="banner-region">
     
     <aside className="sidebar-left">
