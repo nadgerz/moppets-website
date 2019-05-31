@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import BannerRegion from "../components/bannerRegion"
 import Skills from "../components/skills"
+import Portfolio from "../components/portfolio"
 
 
 const IndexPage = () => (
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <main id={'main'}>
       <BannerRegion/>
       <Skills/>
+      <Portfolio/>
     </main>
   </Layout>
 )
