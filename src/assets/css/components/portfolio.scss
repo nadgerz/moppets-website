@@ -36,12 +36,16 @@
     .download {
       height: 9rem;
       //@include border-layout-dashed;
+      text-align: center;
 
-      img {
-        //@include border-layout-solid;
-        max-width: 100%;
-        max-height: 100%;
-        //align-self: flex-end;
+      .download-portfolio {
+        padding: 2rem 1rem;
+        margin-bottom: $bottom-margin-mini;
+        @include border1px($color-grey-dark);
+
+        h2 {
+          color: $color-text;
+        }
       }
     }
   }

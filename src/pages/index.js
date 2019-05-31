@@ -28,7 +28,7 @@ const IndexPage = () => (
     <BannerRegion data={homeData}/>
     <Skills/>
     <Portfolio/>
-    <div className={"container-two-thirds-width"}>
+    <div className={"container-two-thirds-width image-container"}>
       <img className={'imgOranges'} src={Oranges} alt="cute Oranges"/>
     </div>
   </Layout>

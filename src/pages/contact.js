@@ -33,12 +33,12 @@ const Contact = () => (
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/kerstin-dengl-ba59205/">
+              <a href="https://www.linkedin.com/in/kerstin-dengl-ba59205/" target={'_blank'}>
                 <LinkedIn/>
               </a>
             </li>
             <li>
-              <a href="https://github.com/MoppetX">
+              <a href="https://github.com/MoppetX" target={'_blank'}>
                 <GitHub/>
               </a>
             </li>

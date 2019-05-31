@@ -51,20 +51,20 @@
 @media screen and (max-width: 550px) {
 
     // TODO fix CV positioning on mobile later (move right)
-  .CV aside h2 {
-    display: none;
-  }
+  //.CV aside h2 {
+  //  display: none;
+  //}
 
   .CVLine-content {
-    .time-place {
-      margin-left: calc( #{-$sidebar-margin-right} - #{$sidebar-left-width} );
-      margin-right: $sidebar-margin-right;
-    }
+    //.time-place {
+    //  margin-left: calc( #{-$sidebar-margin-right} - #{$sidebar-left-width} );
+    //  margin-right: $sidebar-margin-right;
+    //}
     .title {
     margin-right: 0;
     }
-    .description {
-      flex-basis: 100%;
-    }
+  //  .description {
+  //    flex-basis: 100%;
+  //  }
   }
 }

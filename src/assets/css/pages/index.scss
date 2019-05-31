@@ -2,7 +2,22 @@
 @import "../base/measurements";
 @import "../abstracts/mixins";
 
-.imgOranges {
-  height: 100%;
-  margin-left: calc(#{$sidebar-margin-right} + #{$sidebar-left-width});
+
+
+
+.image-container {
+  .imgOranges {
+    height: auto;
+    max-width: 100%;
+    margin-left: calc(#{$sidebar-margin-right} + #{$sidebar-left-width});
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .image-container {
+    margin: 0 auto;
+    .imgOranges {
+      margin-left: 0;
+    }
+  }
 }

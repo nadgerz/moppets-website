@@ -4,7 +4,8 @@ import React from "react"
 
 import "../assets/css/components/portfolio.scss"
 
-const Portfolio = ({  }) => (
+
+const Portfolio = ( {} ) => (
   <section className="recent-work">
     <aside className="sidebar-left">
       <h2 className="work">Recent Work</h2>
@@ -19,7 +20,13 @@ const Portfolio = ({  }) => (
       </div>
       
       <div className="container-half-width download">
-        <img src="/" alt="download my portfolio" />
+        <div className="download-portfolio">
+          <a href="#">
+            <h2>Portfolio</h2>
+            DOWNLOAD
+          </a>
+        </div>
+        {/*<a href="#">DOWNLOAD</a>*/}
       </div>
     </div>
   </section>
