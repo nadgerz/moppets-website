@@ -1,3 +1,27 @@
 @import "../base/colors";
 @import "../base/measurements";
 @import "../abstracts/mixins";
+
+.CVLine-content {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  .time-place {
+    @include border-layout-dashed;
+    margin-right: $container-margin;
+  }
+
+  .title {
+    @include border-layout-dashed;
+    margin-right: $container-margin;
+  }
+
+  .description {
+    @include border-layout-dashed;
+    p {
+      margin: 0;
+    }
+  }
+}

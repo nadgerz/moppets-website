@@ -19,6 +19,11 @@
   flex-shrink: 0;
 }
 
+.container-one-sixth-width {
+  width: $container-one-sixth-width;
+  max-width: 100%;
+}
+
 .container-quarter-width {
   width: $container-quarter-width;
   max-width: 100%;

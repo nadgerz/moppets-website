@@ -9,18 +9,19 @@ const CVLine = ( { data } ) => (
   <div className="CVLine-content">
     
     {/* T I M E & place */}
-    <div className={"container-one-sixth-width"}>
-      <h3>{data.time.range}</h3>
+    <div className={"time-place container-one-sixth-width"}>
+      <h4>{data.time.range}</h4>
       <p>{data.time.place}</p>
     </div>
     
     {/* T I T L E */}
-    <div className="container-third-width">
-      <p>{data.title}</p>
+    <div className="title container-third-width">
+      {/*<h4>title</h4>*/}
+      <h4>{data.title}</h4>
     </div>
     
     {/* DESCRIPTION */}
-    <div className="container-half-width-">
+    <div className="description container-half-width">
       <p className="copy-text">
         {data.description}
       </p>
@@ -36,10 +37,10 @@ CVLine.propTypes = {
 }
 
 CVLine.defaultProps = {
-  time: `date`,
+  range: `date`,
   place: `place`,
   siteTitle: `job title`,
-  description: `description text`,
+  description: `description copy`,
 }
 
 export default CVLine

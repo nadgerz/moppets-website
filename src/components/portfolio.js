@@ -19,7 +19,7 @@ const Portfolio = ({  }) => (
       </div>
       
       <div className="container-half-width download">
-        <img src="/branding/imgs/portfolio.png" alt="download my portfolio" />
+        <img src="/" alt="download my portfolio" />
       </div>
     </div>
   </section>
