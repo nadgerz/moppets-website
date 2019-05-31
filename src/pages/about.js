@@ -7,12 +7,15 @@ import BannerRegion from "../components/bannerRegion"
 import "../assets/css/pages/about.scss"
 import { Portrait } from "../assets/images/branding/svgs"
 
+
 const aboutData = {
   img: <Portrait/>,
-  text: <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-    "        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quat. luptatum zzril
-    "        delenit augue duis dolore te feugait nulla facilisi.
-  </p>,
+  text:
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+      laoreet dolore magna aliquam erat volutpat. <br/>Ut wisi enim ad minim veniam, quat. luptatum zzril
+      delenit augue duis dolore te feugait nulla facilisi.
+    </p>,
 }
 
 const About = () => (
@@ -21,9 +24,17 @@ const About = () => (
     <div className="about" id="about">
       
       <BannerRegion data={aboutData}/>
-      <h2>Hi from the About Me page</h2>
-      <p>Welcome to About</p>
-    
+      
+      <section className={'CV'}>
+        
+        <aside className="sidebar-left">
+          <h2>CV</h2>
+        </aside>
+        
+        <div className="container-full-width">
+        
+        </div>
+      </section>
     </div>
   </Layout>
 )

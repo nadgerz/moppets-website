@@ -4,7 +4,16 @@
 
 .about {
 
-  h2 {
-    text-align: left;
+  .CV {
+    display: flex;
+    align-items: stretch;
+
+    aside {
+      @include border-layout-solid;
+      margin-right: $sidebar-margin-right;
+    }
+    .container-full-width {
+      @include border-layout-solid;
+    }
   }
 }
