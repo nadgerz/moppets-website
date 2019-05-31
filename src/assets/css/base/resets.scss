@@ -27,12 +27,3 @@ html {
 }
 
 //---------------------------------------------------------
-//   change text highlight color
-//---------------------------------------------------------
-
-::selection {
-  background: $color-highlight-text; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  background: $color-highlight-text; /* Gecko Browsers */
-}

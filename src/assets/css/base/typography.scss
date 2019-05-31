@@ -127,16 +127,6 @@ p {
 
 a {
   @include font-family-sans-serif(DisplayMedium);
-  text-decoration: none;
-  color: $color-grey-medium;
-
-  &:hover {
-    border-bottom: 4px solid $color-highlight;
-  }
-
-  &:active {
-    color: $color-text;
-  }
 }
 
 //---------------------------------------------------------

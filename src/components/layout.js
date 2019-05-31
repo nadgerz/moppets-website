@@ -14,6 +14,7 @@ import Header from "./header"
 import "../assets/css/layout.scss"
 import "../assets/css/base/resets.scss"
 import "../assets/css/base/typography.scss"
+import "../assets/css/base/styles.scss"
 
 
 const Layout = ( { children } ) => (
