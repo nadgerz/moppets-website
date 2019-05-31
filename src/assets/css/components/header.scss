@@ -5,7 +5,9 @@
 
 .nav-branding {
   .logo {
-    //@include border-layout-solid;
+    a {
+      border-bottom: 0;
+    }
 
     svg {
       max-height: 100%;
