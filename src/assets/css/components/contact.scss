@@ -6,8 +6,6 @@
 .contact {
 
   aside {
-    @include border-layout-solid;
-
     margin-right: $sidebar-margin-right;
   }
 
@@ -23,6 +21,9 @@
   .get-in-touch {
     display: flex;
     align-items: flex-start;
+    padding-bottom: $bottom-margin-small;
+    margin-bottom: $bottom-margin-small;
+    @include border-bottom($color-grey-light);
 
     .social-icons {
       display: flex;
