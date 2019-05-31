@@ -2,6 +2,12 @@
 @import "../base/measurements";
 @import "../abstracts/mixins";
 
-aside {
-  margin-right: $sidebar-margin-right;
+
+.contact {
+  display: flex;
+  align-items: flex-start;
+
+  aside {
+    margin-right: $sidebar-margin-right;
+  }
 }

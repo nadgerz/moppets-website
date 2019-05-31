@@ -5,7 +5,7 @@ const xmlns = "http://www.w3.org/2000/svg"
 const viewBox1 = "0 0 448 512"
 const viewBoxSquare = "0 0 512 512"
 
-export const mail = () =>
+export const Mail = () =>
   <svg
     className="svg mail"
     aria-hidden={"true"}
@@ -21,7 +21,7 @@ export const mail = () =>
     </path>
   </svg>
 
-export const gitHub = () =>
+export const GitHub = () =>
   <svg
     className="svg github"
     aria-hidden={"true"}
@@ -37,7 +37,7 @@ export const gitHub = () =>
     </path>
   </svg>
 
-export const linkedIn = () =>
+export const LinkedIn = () =>
   <svg
     className="svg linkedIn"
     aria-hidden={"true"}
@@ -53,7 +53,7 @@ export const linkedIn = () =>
     </path>
   </svg>
 
-export const codePen = () =>
+export const CodePen = () =>
   <svg
     className="svg codePen"
     aria-hidden={"true"}
