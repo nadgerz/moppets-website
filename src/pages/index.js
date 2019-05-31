@@ -11,11 +11,9 @@ import Portfolio from "../components/portfolio"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home"/>
-    <main id={'main'}>
       <BannerRegion/>
       <Skills/>
       <Portfolio/>
-    </main>
   </Layout>
 )
 

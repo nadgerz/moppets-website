@@ -123,7 +123,7 @@ main {
   padding-top: calc(#{$header-height} + #{$bottom-margin-big});
 
   // simple way to get a sticky footer
-  min-height: calc(100vh - #{$header-height} - #{$footer-height});
+  min-height: calc(100vh - #{$footer-height});
 }
 
 //---------------------------------------------------------
