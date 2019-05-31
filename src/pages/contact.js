@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { GitHub, CodePen, LinkedIn, Mail } from "../assets/images/socialIcons"
-import "../assets/css/components/contact.scss"
+import "../assets/css/pages/contact.scss"
 
 
 const Contact = () => (
