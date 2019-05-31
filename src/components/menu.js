@@ -11,6 +11,13 @@ const Menu = () => (
         <ul id="main-menu" className="menu menu-on menu-off">
           <li>
             <Link
+              to="/">
+              Work
+              {/*{siteTitle}*/}
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/about">
               About
               {/*{siteTitle}*/}
@@ -20,13 +27,6 @@ const Menu = () => (
             <Link
               to="/contact">
               Contact
-              {/*{siteTitle}*/}
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about">
-              Work
               {/*{siteTitle}*/}
             </Link>
           </li>
