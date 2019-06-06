@@ -16,9 +16,9 @@ const homeData = {
   img: <HiBubble/>,
   text:
     <p>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-      laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quat. luptatum zzril
-      delenit augue duis dolore te feugait nulla facilisi.
+      I'm a frontend developer and graphic designer, who enjoys turning complex problems into simple, beautiful and intuitive designs.
+      <br/>
+      I can help you in your project: from creating UI mockups, graphical assets, wireframes, click-dummies for testing, and fixing design issues, to front-end web development and bulding full sites.
     </p>,
 }
 
