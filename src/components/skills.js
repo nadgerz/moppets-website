@@ -14,6 +14,7 @@ const Skills = () => (
       <div className="container-full-width">
         <ul className={'tech-stack stack'}>
           <li>React JS</li>
+          <li>Gatsby</li>
           <li>JS</li>
           <li>SASS</li>
           <li>CSS</li>
