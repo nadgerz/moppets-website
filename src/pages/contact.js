@@ -19,7 +19,7 @@ const Contact = () => (
         
         <div className={"container-two-thirds-width"}>
           <h2>GET IN TOUCH</h2>
-          <p>Drop me a line in case you'd like to start working together</p>
+          <p>Drop me a line if you'd like to start working together</p>
         </div>
       </div>
       

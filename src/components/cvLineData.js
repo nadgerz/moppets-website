@@ -37,7 +37,7 @@ export const cvData = [
     <p className="copy-text">
       <h3>print and online media</h3>
       <ul>
-        <li>daily news graphics, diagrams, maps, edugraphics, and Icons for print newspapers and school book publishers</li>
+        <li>daily news graphics, diagrams, maps, edugraphics, and icons for print newspapers and school book publishers</li>
         <li>illustrations, infographics, games, plus interactive online edugraphics and games targeted at 6 - 13 year
           old children
         </li>
