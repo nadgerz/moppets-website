@@ -11,17 +11,17 @@ export const cvData = [
       },
     title: "Freelance Front End Developer and Designer",
     description:
-      <p>
-        <strong>Coding</strong><br />
+      <p className="copy-text">
+        <h3 className={'copy-title'}>CODING</h3>
         <ul>
           <li>Front-End Web Development using HTML5, CSS & SASS, ES6, React and Drupal</li>
           <li>Version Control with Git</li>
         </ul>
-        <strong>Design</strong>
+        <h3 className={'copy-title'}>Design</h3>
         <ul>
           <li>Web Design, User Interface Design, Illustrations, Layouts</li>
           <li>Wireframes for App and Web projects</li>
-          <li>protoyping websites & apps with Click dummies built in Adobe XD</li>
+          <li>protoyping websites & apps with click dummies built in Adobe XD</li>
         </ul>
       </p>,
   },
@@ -34,11 +34,11 @@ export const cvData = [
       },
     title: "Infographic Designer, dpa (German Press Agency)",
     description:
-    <p>
-      <strong><span>print and online media</span></strong>
+    <p className="copy-text">
+      <h3>print and online media</h3>
       <ul>
-        <li>daily news graphics, diagrams, maps, edugraphics, and Icons for print newspapers and school books</li>
-        <li>illustrations, infographics, game graphics, plus interactive online edugraphics and games for 6 to 13 year
+        <li>daily news graphics, diagrams, maps, edugraphics, and Icons for print newspapers and school book publishers</li>
+        <li>illustrations, infographics, games, plus interactive online edugraphics and games targeted at 6 - 13 year
           old children
         </li>
         <li>development and improvement of design templates</li>

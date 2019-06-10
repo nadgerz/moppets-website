@@ -22,9 +22,7 @@ const CVLine = ( { data } ) => (
     
     {/* DESCRIPTION */}
     <div className="description container-half-width">
-      <p className="copy-text">
-        {data.description}
-      </p>
+      {data.description}
     </div>
   </div>
 )
