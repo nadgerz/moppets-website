@@ -56,6 +56,10 @@
     border: 3px solid $color-highlight;
   }
 
+  &:active {
+    border: 3px solid $color-text;
+  }
+
   h3 {
     color: $color-text;
     margin-bottom: $bottom-margin-mini;
