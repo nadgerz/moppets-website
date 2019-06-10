@@ -21,7 +21,7 @@ export const cvData = [
         <ul>
           <li>Web Design, User Interface Design, Illustrations, Layouts</li>
           <li>Wireframes for App and Web projects</li>
-          <li>protoyping websites & apps with click dummies built in Adobe XD</li>
+          <li>Protoyping websites & apps with click dummies built in Adobe XD</li>
         </ul>
       </p>,
   },
@@ -52,7 +52,7 @@ export const cvData = [
       {
         range: "2009 - 2014",
       },
-    title: "Freelance Designer",
+    title: "Freelance Graphic Designer",
     description: "Graphic Design, Illustrations, Corporate Identity & Branding, Web Design, Logo Design, Infographics\n",
   },
   {
