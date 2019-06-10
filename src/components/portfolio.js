@@ -6,30 +6,49 @@ import "../assets/css/components/portfolio.scss"
 
 
 const Portfolio = ( {} ) => (
-  <section className="recent-work">
-    <aside className="sidebar-left">
-      <h2 className="work">Recent Work</h2>
-    </aside>
-    
-    <div className="container">
+  <>
+    <section className="recent-work">
+      <aside className="sidebar-left">
+        <h2>Recent Work</h2>
+      </aside>
+      
       <div className="container-half-width">
         <ul className="clients">
           <li><a href="https://www.neumann-hug.com">Neumann Hug Collection</a></li>
           <li><a href="https://www.moerbeck.de">Kevin van Moerbeck</a></li>
         </ul>
       </div>
+    </section>
+    
+    <section className={"portfolios"}>
+      <aside className="sidebar-left">
+        <h2>Port-folio</h2>
+      </aside>
       
-      <div className="container-half-width download">
-        <div className="download-portfolio">
-          <a href="#">
-            <h2>Portfolio</h2>
-            DOWNLOAD
+      <div className="container">
+        <div className="container-third-width download-button">
+          <a className="download-portfolio" href="#">
+            <h3>Screen/UI Design</h3>
+            DOWNLOAD PORTFOLIO
           </a>
         </div>
-        {/*<a href="#">DOWNLOAD</a>*/}
+        
+        <div className="container-third-width download-button">
+          <a className="download-portfolio" href="#">
+            <h3>Illustration</h3>
+            DOWNLOAD PORTFOLIO
+          </a>
+        </div>
+        
+        <div className="container-third-width download-button">
+          <a className="download-portfolio" href="#">
+            <h3>Infographics</h3>
+            DOWNLOAD PORTFOLIO
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </>
 )
 
 // Portfolio.propTypes = {

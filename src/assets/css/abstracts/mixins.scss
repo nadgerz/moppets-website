@@ -1,3 +1,6 @@
+@import "../base/measurements";
+@import "../base/colors";
+
 
 // STANDARDS FOR LAYOUTING
 
@@ -41,4 +44,21 @@
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
   border-radius: 7px;
+}
+
+@mixin downloadButton {
+  height: 9rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: $bottom-margin-mini;
+  @include border1px($color-grey-dark);
+
+  &:hover {
+    border: 3px solid $color-highlight;
+  }
+
+  h3 {
+    color: $color-text;
+    margin-bottom: $bottom-margin-mini;
+  }
 }

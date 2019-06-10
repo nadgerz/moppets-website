@@ -6,59 +6,44 @@
   display: flex;
   align-items: flex-start;
   padding-bottom: $bottom-margin-small;
-  margin-bottom: $sidebar-left-width;
+  margin-bottom: $bottom-margin-small;
   @include border-bottom($color-grey-light);
 
   aside {
     margin-right: $sidebar-margin-right;
   }
 
+  .clients li {
+    list-style: none;
+    margin-bottom: .5rem;
+  }
+}
+
+.portfolios {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: $bottom-margin-mini;
+  margin-bottom: $bottom-margin-big;
+  @include border-bottom($color-grey-light);
+
+  aside {
+    margin-right: $sidebar-margin-right;
+    overflow-wrap: break-word;
+  }
+
   .container {
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
     align-items: stretch;
 
-    div {
-      //@include border-layout-solid;
-      margin-bottom: $bottom-margin-small;
-
-      &:first-child {
-        margin-right: $container-margin;
-      }
-    }
-
-    .clients {
-      li {
-        line-height: 2;
-        list-style: none;
-      }
-    }
-
-    .download {
-      height: 9rem;
-      //@include border-layout-dashed;
-      text-align: center;
-
-      .download-portfolio {
-        padding: 2rem 1rem;
-        margin-bottom: $bottom-margin-mini;
-        @include border1px($color-grey-dark);
-
-        //a {
-        //  border-bottom: 0;
-        //}
-        h2 {
-          color: $color-text;
-        }
-
-        &:hover {
-          border: 3px solid $color-highlight;
-        }
-
-      }
+    .download-button {
+      @include downloadButton;
     }
   }
 }
+
 
 //---------------------------------------------------------
 //  responsive
