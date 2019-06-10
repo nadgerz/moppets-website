@@ -4,8 +4,6 @@
 
 .image-container {
   .imgOranges {
-    height: auto;
-    max-width: 100%;
     margin-left: calc(#{$sidebar-margin-right} + #{$sidebar-left-width});
   }
 }

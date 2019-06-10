@@ -21,10 +21,12 @@
     }
   }
 
+  .image-container {
+      margin: 0 auto;
+      //margin-left: calc (#{$sidebar-left-width} + #{$sidebar-margin-right});
+  }
 }
 
 @media screen and (max-width: 550px) {
-  .image-container {
-    margin: 0 auto;
-  }
+
 }
