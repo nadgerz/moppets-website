@@ -8,14 +8,16 @@ import CVLine from "../components/CVLine"
 import { Portrait } from "../assets/images/branding/svgs"
 import { cvData } from "../components/cvLineData"
 import "../assets/css/pages/about.scss"
-import Strawberries from "../assets/images/strawberries.png"
+import strawberries from "../assets/images/strawberries.png"
 
 
 const aboutData = {
   img: <Portrait/>,
   text:
     <p>
-      After teaching myself the principles of programming (in Java) for half a year in 2017, I began work as a freelance frontend developer at the beginning of 2018 for a development team/company of four, specialising in providing 3D online galleries for artists and gallerists.
+      After teaching myself the principles of programming (in Java) for half a year in 2017, I began work as a freelance
+      frontend developer at the beginning of 2018 for a development team/company of four, specialising in providing 3D
+      online galleries for artists and gallerists.
     </p>,
 }
 
@@ -48,7 +50,7 @@ const About = () => (
       </section>
       
       <div className={"container-two-thirds-width image-container"}>
-        <img className={"imgStrawberries"} src={Strawberries} alt="three yummy strawberries"/>
+        <img className={"imgStrawberries"} src={strawberries} alt="three yummy strawberries"/>
       </div>
     </div>
   </Layout>
