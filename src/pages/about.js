@@ -7,7 +7,7 @@ import BannerRegion from "../components/bannerRegion"
 import CVLine from "../components/CVLine"
 import { Portrait } from "../assets/images/branding/svgs"
 import { cvData } from "../components/cvLineData"
-import { cv } from "../assets/pdf/2019_CV.pdf"
+import cvPDF from "../assets/pdf/2019_CV.pdf"
 import strawberries from "../assets/images/strawberries.png"
 import "../assets/css/pages/about.scss"
 
@@ -33,9 +33,9 @@ const About = () => (
         
         <aside className="sidebar-left">
           <div className="download-cv">
-            <h2>CV</h2>
-            <a href={cv}
+            <a href={cvPDF}
                download={`KerstinDengl_CV`}>
+              <h2>CV</h2>
               DOWNLOAD
             </a>
           </div>

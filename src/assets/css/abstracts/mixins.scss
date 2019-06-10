@@ -60,8 +60,13 @@
     border: 3px solid $color-text;
   }
 
-  h3 {
+  h3,
+  h2 {
     color: $color-text;
     margin-bottom: $bottom-margin-mini;
+
+    &:hover {
+      //color: $color-grey-medium;
+    }
   }
 }
