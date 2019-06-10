@@ -10,19 +10,17 @@
     padding-bottom: $bottom-margin-small;
     margin-bottom: $bottom-margin-big;
 
-    aside {
-      margin-right: $sidebar-margin-right;
-    }
+  }
 
-    .container-full-width {
+  aside {
+    margin-right: $sidebar-margin-right;
+
+    .download-cv {
+      @include downloadButton;
+      width: 100%;
     }
   }
 
-  .imgPineapple {
-    //height: 100%;
-    //width: auto;
-    //margin-left: calc(#{$sidebar-margin-right} + #{$sidebar-left-width});
-  }
 }
 
 @media screen and (max-width: 550px) {

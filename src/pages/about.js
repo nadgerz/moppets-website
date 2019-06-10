@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import BannerRegion from "../components/bannerRegion"
 import CVLine from "../components/CVLine"
 import { Portrait } from "../assets/images/branding/svgs"
-import {cvData} from "../components/cvLineData"
+import { cvData } from "../components/cvLineData"
 import "../assets/css/pages/about.scss"
 import Pinapple from "../assets/images/pineapple.png"
 
@@ -21,7 +21,6 @@ const aboutData = {
     </p>,
 }
 
-
 const About = () => (
   <Layout>
     <SEO title="About Me"/>
@@ -32,7 +31,12 @@ const About = () => (
       <section className={"CV"}>
         
         <aside className="sidebar-left">
-          <h2>CV</h2>
+          <div className="download-cv">
+            <h2>CV</h2>
+            <a href="#">
+              DOWNLOAD
+            </a>
+          </div>
         </aside>
         
         <div className="container-full-width">
@@ -44,9 +48,9 @@ const About = () => (
           }
         </div>
       </section>
-  
+      
       <div className={"container-two-thirds-width image-container"}>
-        <img className={'imgPineapple'} src={Pinapple} alt="Senorita Pinapple"/>
+        <img className={"imgPineapple"} src={Pinapple} alt="Senorita Pinapple"/>
       </div>
     </div>
   </Layout>
