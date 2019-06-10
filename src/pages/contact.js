@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import { GitHub, LinkedIn, Mail } from "../assets/images/socialIcons"
 // import { GitHub, CodePen, LinkedIn, Mail } from "../assets/images/socialIcons"
 import "../assets/css/pages/contact.scss"
+import Pineapple from "../assets/images/pineapple.png"
 
 
 const Contact = () => (
@@ -33,12 +34,12 @@ const Contact = () => (
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/kerstin-dengl-ba59205/" target={'_blank'}>
+              <a href="https://www.linkedin.com/in/kerstin-dengl-ba59205/" target={"_blank"}>
                 <LinkedIn/>
               </a>
             </li>
             <li>
-              <a href="https://github.com/MoppetX" target={'_blank'}>
+              <a href="https://github.com/MoppetX" target={"_blank"}>
                 <GitHub/>
               </a>
             </li>
@@ -50,6 +51,10 @@ const Contact = () => (
           </ul>
         </div>
       </section>
+      
+      <div className={"container-two-thirds-width image-container"}>
+        <img className={"imgPineapple"} src={Pineapple} alt="Senorita Pinapple"/>
+      </div>
     </div>
   </Layout>
 )
