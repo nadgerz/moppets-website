@@ -12,7 +12,7 @@
   background: $color-highlight-text; /* Gecko Browsers */
 }
 
-//   change text highlight color
+//
 //---------------------------------------------------------
 
 a {
@@ -30,4 +30,8 @@ a {
   &:active {
     color: $color-text;
   }
+}
+
+.active-Link {
+  color: $color-text;
 }

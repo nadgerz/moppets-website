@@ -15,9 +15,7 @@ const aboutData = {
   img: <Portrait/>,
   text:
     <p>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-      laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quat. luptatum zzril
-      delenit augue duis dolore te feugait nulla facilisi.
+      After teaching myself the principles of programming (in Java) for half a year in 2017, I began work as a freelance frontend developer at the beginning of 2018 for a development team/company of four, specialising in providing 3D online galleries for artists and gallerists.
     </p>,
 }
 

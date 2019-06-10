@@ -52,8 +52,8 @@ export const cvData = [
       {
         range: "2009 - 2014",
       },
-    title: "B.A. Communications Design, University of Applied Sciences Augsburg",
-    description: "B.A. with a specialisation in infographic design",
+    title: "Freelance Designer",
+    description: "Graphic Design, Illustrations, Corporate Identity & Branding, Web Design, Logo Design, Infographics\n",
   },
   {
     id: "CVLine-4",
@@ -61,8 +61,8 @@ export const cvData = [
       {
         range: "2008 - 2013",
       },
-    title: "Freelance Designer",
-    description: "Graphic Design, Illustrations, Corporate Identity & Branding, Web Design, Logo Design, Infographics\n",
+    title: "B.A. Communications Design, University of Applied Sciences Augsburg",
+    description: "B.A. with a specialisation in infographic design",
   },
 
 ]

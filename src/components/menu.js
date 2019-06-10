@@ -11,21 +11,24 @@ const Menu = () => (
         <ul id="main-menu" className="menu menu-on menu-off">
           <li>
             <Link
-              to="/">
+              to="/"
+              activeClassName={'active-Link'}>
               Work
               {/*{siteTitle}*/}
             </Link>
           </li>
           <li>
             <Link
-              to="/about">
+              to="/about"
+              activeClassName={'active-Link'}>
               About
               {/*{siteTitle}*/}
             </Link>
           </li>
           <li>
             <Link
-              to="/contact">
+              to="/contact"
+              activeClassName={'active-Link'}>
               Contact
               {/*{siteTitle}*/}
             </Link>
