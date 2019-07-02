@@ -12,16 +12,15 @@ export const cvData = [
     title: "Freelance Front End Developer and Designer",
     description:
       <p className="copy-text">
-        <h3 className={'copy-title'}>CODING</h3>
+        Kunstmatrix Tech develops web pages and apps, as well as providing online 3D art galleries.
         <ul>
-          <li>Front-End Web Development using HTML5, CSS & SASS, ES6, React and Drupal</li>
-          <li>Version Control with Git</li>
-        </ul>
-        <h3 className={'copy-title'}>Design</h3>
-        <ul>
-          <li>Web Design, User Interface Design, Illustrations, Layouts</li>
-          <li>Wireframes for App and Web projects</li>
-          <li>Protoyping websites & apps with click dummies built in Adobe XD</li>
+          <li>carried web projects from beginning to end: from defining requirements, handling feedback, and CMS set up to the build and deployment of a site
+          </li>
+          <li>carried web projects from beginning to end: from defining requirements, handling feedback, and CMS set up to the build and deployment of a site
+          </li>
+          <li>carried web projects from beginning to end: from defining requirements, handling feedback, and CMS set up to the build and deployment of a site
+          </li>
+          <li><h4>TECH STACK:</h4>React, JS, HTML5, CSS & SASS, and Drupal</li>
         </ul>
       </p>,
   },
