@@ -20,7 +20,7 @@ export const cvData = [
           </li>
           <li>carried web projects from beginning to end: from defining requirements, handling feedback, and CMS set up to the build and deployment of a site
           </li>
-          <li><h4>TECH STACK:</h4>React, JS, HTML5, CSS & SASS, and Drupal</li>
+          <li><h4>Tech Stack:</h4>React, JS, HTML5, CSS & SASS, and Drupal</li>
         </ul>
       </p>,
   },

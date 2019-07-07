@@ -7,7 +7,7 @@ import infographicsPDF from "../assets/pdf/2019_Portfolio_Infographics.pdf"
 import "../assets/css/components/portfolio.scss"
 
 
-const Portfolio = ( {} ) => (
+const Portfolio = (  ) => (
   <>
     <section className="recent-work">
       <aside className="sidebar-left">

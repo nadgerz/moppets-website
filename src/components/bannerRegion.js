@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
-import { HiBubble } from "../assets/images/branding/svgs"
+// import { HiBubble } from "../assets/images/branding/svgs"
 import "../assets/css/components/banner-region.scss"
 
 

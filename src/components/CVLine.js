@@ -10,14 +10,14 @@ const CVLine = ( { data } ) => (
     
     {/* T I M E & place */}
     <div className={"time-place container-one-sixth-width"}>
-      <h4>{data.time.range}</h4>
+      <h3>{data.time.range}</h3>
       <p>{data.time.place}</p>
     </div>
     
     {/* T I T L E */}
     <div className="title container-third-width">
       {/*<h4>title</h4>*/}
-      <h4>{data.title}</h4>
+      <h3>{data.title}</h3>
     </div>
     
     {/* DESCRIPTION */}
