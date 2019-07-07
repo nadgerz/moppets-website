@@ -1,12 +1,13 @@
-// import { Link } from "gatsby"
 // import PropTypes from "prop-types"
 import React from "react"
+import {tech} from "./skillsData"
 
 import "../assets/css/components/skills.scss"
 
 
 const Skills = () => (
   <div className={"skills"}>
+    
     {/* //  T E C H */}
     <section className="skill">
       <aside className="sidebar-left">
@@ -14,7 +15,7 @@ const Skills = () => (
       </aside>
       <div className="container-full-width">
         <ul className={"tech-stack stack"}>
-          <li>React JS</li>
+          <li>{tech[0].name}</li>
           <li>Gatsby</li>
           <li>JS</li>
           <li>SASS</li>
