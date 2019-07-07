@@ -11,7 +11,7 @@ export const cvData = [
       },
     title: "Freelance Front End Developer and Designer",
     description:
-      <p className="copy-text">
+      <>
         <p>Kunstmatrix Tech specialises in providing online 3D art galleries but develops web pages and apps as
           well.</p>
         <ul>
@@ -25,7 +25,7 @@ export const cvData = [
           </li>
         </ul>
           <p><h4>Tech Stack:</h4>React, JS, HTML5, CSS/SASS/Flexbox, and Drupal</p>
-      </p>,
+      </>,
   },
   {
     id: "CVLine-2",
@@ -36,7 +36,7 @@ export const cvData = [
       },
     title: "Infographic Designer",
     description:
-      <p className="copy-text">
+      <>
         <h4>German Press Agency, dpa infografik GmbH</h4>
         <p>(previously infographic intern in 2011)</p>
         <ul>
@@ -51,7 +51,7 @@ export const cvData = [
             13 year old children
           </li>
         </ul>
-      </p>,
+      </>,
   },
   {
     id: "CVLine-3",
@@ -62,14 +62,14 @@ export const cvData = [
       },
     title: "Freelance Graphic Designer",
     description:
-      <p>
+      <>
         <h4>print & online media</h4>
         <p>customers included German and US companies</p>
         <ul>
           <li>customers included German and US companies</li>
           <li>corporate identity & branding: from logo, letter and form design, to website layouts and business cards</li>
         </ul>
-      </p>,
+      </>,
   },
   {
     id: "CVLine-4",
