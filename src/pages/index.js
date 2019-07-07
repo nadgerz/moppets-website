@@ -22,8 +22,7 @@ const homeData = {
       </p>
       <p>
         I can help you in your project: from creating UI mockups, graphical assets, wireframes, click-dummies for
-        testing,
-        and fixing design issues, to front-end web development and building full sites.
+        testing, and fixing design issues, to front-end web development and building full sites.
       </p>
     </>,
 }

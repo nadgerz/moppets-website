@@ -1,6 +1,5 @@
 import PropTypes from "prop-types"
 import React from "react"
-// import { HiBubble } from "../assets/images/branding/svgs"
 import "../assets/css/components/banner-region.scss"
 
 
@@ -12,16 +11,15 @@ const BannerRegion = ( { data } ) => (
     </aside>
     
     <div className="container-two-thirds-width">
-      <p>
-        {data.text}
-      </p>
+      {data.text}
     </div>
   </div>
 )
 
 BannerRegion.propTypes = {
-  img: PropTypes.element,
-  text: PropTypes.string,
+  img: PropTypes.node,
+  // img: PropTypes.element,
+  text: PropTypes.node,
 }
 
 BannerRegion.defaultProps = {
