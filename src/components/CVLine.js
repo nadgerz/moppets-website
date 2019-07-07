@@ -15,13 +15,11 @@ const CVLine = ( { data } ) => (
     </div>
     
     {/* T I T L E */}
-    <div className="title container-third-width">
+    <div className="title description container-five-sixth-width">
       {/*<h4>title</h4>*/}
       <h3>{data.title}</h3>
-    </div>
-    
-    {/* DESCRIPTION */}
-    <div className="description container-half-width">
+      
+      {/* DESCRIPTION */}
       {data.description}
     </div>
   </div>
