@@ -24,7 +24,7 @@ export const cvData = [
           <li>screen & user interface design, illustrations and icons
           </li>
         </ul>
-          <p><h4>Tech Stack:</h4>React, JS, HTML5, CSS/SASS/Flexbox, and Drupal</p>
+        <h4>Tech Stack:</h4>React, JS, HTML5, CSS/SASS/Flexbox, and Drupal
       </>,
   },
   {
@@ -67,7 +67,8 @@ export const cvData = [
         <p>customers included German and US companies</p>
         <ul>
           <li>customers included German and US companies</li>
-          <li>corporate identity & branding: from logo, letter and form design, to website layouts and business cards</li>
+          <li>corporate identity & branding: from logo, letter and form design, to website layouts and business cards
+          </li>
         </ul>
       </>,
   },
@@ -76,19 +77,19 @@ export const cvData = [
     time:
       {
         range: "2008 - 2013",
-        place: "Augsburg"
+        place: "Augsburg",
       },
     title: "University of Applied Sciences Augsburg",
-    description: "BA in Communications Design with a focus on infographic design",
+    description: <p>BA in Communications Design with a focus on infographic design</p>,
   },
   {
     id: "CVLine-5",
     time:
       {
         range: "2007",
-        place: "Washington, DC, USA"
+        place: "Washington, DC, USA",
       },
     title: "Language gap year",
-    description: "Worked for a year as an au pair in the United States",
+    description: <p>Worked for a year as an au pair in the United States</p>,
   },
 ]
