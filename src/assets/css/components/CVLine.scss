@@ -22,8 +22,7 @@
 
   .title.description {
     flex: 2 1;
-    min-width: $container-two-thirds-width;
-    padding: 0 .5rem .5rem;
+    min-width: $container-half-width;
 
     p, li {
       margin-bottom: $bottom-margin-mini;
@@ -43,8 +42,10 @@
 @media screen and (max-width: 550px) {
 
   .CVLine-content {
+
     .time-place {
       margin-right: 0;
+      margin-bottom: $bottom-margin-small;
     }
   }
 }
