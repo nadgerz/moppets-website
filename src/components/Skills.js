@@ -1,6 +1,6 @@
 // import PropTypes from "prop-types"
 import React from "react"
-import {tech} from "./skillsData"
+import { tech } from "./skillsData"
 import CVLine from "./CVLine"
 
 import "../assets/css/components/skills.scss"
@@ -19,7 +19,11 @@ const Skills = () => (
         <ul className={"tech-stack stack"}>
           {
             tech.map( ( data ) => {
-              return <li>{data.name}</li>
+              return <li
+                key={data.id}
+                className={"container-third-width"}>
+                {data.name}
+              </li>
             } )
           }
         </ul>
