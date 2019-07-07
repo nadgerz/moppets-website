@@ -29,14 +29,6 @@
       margin-bottom: $bottom-margin-mini;
     }
 
-    //h4 {
-    //  margin-bottom: $bottom-margin-mini;
-    //
-    //  & ~ h4 {
-    //    margin-top: $bottom-margin-small;
-    //  }
-    //}
-
     li {
       list-style-position: inside;
       padding-left: 2rem;
@@ -53,11 +45,6 @@
   .CVLine-content {
     .time-place {
       margin-right: 0;
-      //flex-grow: 1;
-    }
-
-    .title.description {
-      flex-shrink: 0;
     }
   }
 }
