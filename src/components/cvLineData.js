@@ -12,16 +12,19 @@ export const cvData = [
     title: "Freelance Front End Developer and Designer",
     description:
       <p className="copy-text">
-        Kunstmatrix Tech develops web pages and apps, as well as providing online 3D art galleries.
+        <p>Kunstmatrix Tech specialises in providing online 3D art galleries but develops web pages and apps as
+          well.</p>
         <ul>
-          <li>carried web projects from beginning to end: from defining requirements, handling feedback, and CMS set up to the build and deployment of a site
+          <li>carried web projects from beginning to end: from defining requirements, handling feedback, and CMS set up
+            to the build and deployment of a site
           </li>
-          <li>carried web projects from beginning to end: from defining requirements, handling feedback, and CMS set up to the build and deployment of a site
+          <li>carried web projects from beginning to end: from defining requirements, handling feedback, and CMS set up
+            to the build and deployment of a site
           </li>
-          <li>carried web projects from beginning to end: from defining requirements, handling feedback, and CMS set up to the build and deployment of a site
+          <li>screen & user interface design, illustrations and icons
           </li>
-          <li><h4>Tech Stack:</h4>React, JS, HTML5, CSS & SASS, and Drupal</li>
         </ul>
+          <p><h4>Tech Stack:</h4>React, JS, HTML5, CSS/SASS/Flexbox, and Drupal</p>
       </p>,
   },
   {
@@ -31,37 +34,61 @@ export const cvData = [
         range: "2014 - 2017",
         place: "Berlin",
       },
-    title: "Infographic Designer, dpa (German Press Agency)",
+    title: "Infographic Designer",
     description:
-    <p className="copy-text">
-      <h3>print and online media</h3>
-      <ul>
-        <li>daily news graphics, diagrams, maps, edugraphics, and icons for print newspapers and school book publishers</li>
-        <li>illustrations, infographics, games, plus interactive online edugraphics and games targeted at 6 - 13 year
-          old children
-        </li>
-        <li>development and improvement of design templates</li>
-        <li>revision & creation of new style guides for both dpa-Grafik and dpa Kindergrafik</li>
-      </ul>
-    </p>,
+      <p className="copy-text">
+        <h4>German Press Agency, dpa infografik GmbH</h4>
+        <p>(previously infographic intern in 2011)</p>
+        <ul>
+          <li>daily news graphics, diagrams, maps, edugraphics, and icons for print newspapers and school book
+            publishers
+          </li>
+          <li>creation of new style guides for both dpa-Grafik and dpa Kindergrafik to improve user experience</li>
+          <li>coordination of tasks related to the dpa children’s news products, which included the development of
+            time-saving design templates
+          </li>
+          <li>online interactive edugraphics and games as well as print illustrations, infographics, and games for 6 to
+            13 year old children
+          </li>
+        </ul>
+      </p>,
   },
   {
     id: "CVLine-3",
     time:
       {
         range: "2009 - 2014",
+        place: "Augsburg",
       },
     title: "Freelance Graphic Designer",
-    description: "Graphic Design, Illustrations, Corporate Identity & Branding, Web Design, Logo Design, Infographics\n",
+    description:
+      <p>
+        <h4>print & online media</h4>
+        <p>customers included German and US companies</p>
+        <ul>
+          <li>customers included German and US companies</li>
+          <li>corporate identity & branding: from logo, letter and form design, to website layouts and business cards</li>
+        </ul>
+      </p>,
   },
   {
     id: "CVLine-4",
     time:
       {
         range: "2008 - 2013",
+        place: "Augsburg"
       },
-    title: "B.A. Communications Design, University of Applied Sciences Augsburg",
-    description: "B.A. with a specialisation in infographic design",
+    title: "University of Applied Sciences Augsburg",
+    description: "BA in Communications Design with a focus on infographic design",
   },
-
+  {
+    id: "CVLine-5",
+    time:
+      {
+        range: "2007",
+        place: "Washington, DC, USA"
+      },
+    title: "Language gap year",
+    description: "Worked for a year as an au pair in the United States",
+  },
 ]
