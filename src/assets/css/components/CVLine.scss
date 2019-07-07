@@ -17,26 +17,18 @@
   }
 
   .time-place {
-    @include border-layout-dashed;
     margin-right: $container-margin;
   }
 
-  .title {
-    //flex-shrink: 1;
-    padding: 0 .5rem .5rem;
-    //margin-right: $container-margin;
-    //margin-bottom: $bottom-margin-mini;
-  }
-
-  .description {
-    border: 2px solid red;
+  .title.description {
     flex: 2 1;
+    min-width: $container-two-thirds-width;
+    padding: 0 .5rem .5rem;
 
     p, li {
       margin-bottom: $bottom-margin-mini;
     }
-    //min-width: $container-third-width;
-    //
+
     //h4 {
     //  margin-bottom: $bottom-margin-mini;
     //
@@ -58,15 +50,14 @@
 
 @media screen and (max-width: 550px) {
 
-  // TODO fix CV positioning on mobile later (move right)
-  //.CV aside h2 {
-  //  display: none;
-  //}
-
   .CVLine-content {
-    .title {
+    .time-place {
       margin-right: 0;
-      flex-grow: 1;
+      //flex-grow: 1;
+    }
+
+    .title.description {
+      flex-shrink: 0;
     }
   }
 }
