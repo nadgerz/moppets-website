@@ -35,31 +35,26 @@ export const tech = [
   },
   {
     id: "tech-7",
-    name: "SASS",
-    skillLevel: 3
-  },
-  {
-    id: "tech-8",
     name: "CSS",
     skillLevel: 3
   },
   {
-    id: "tech-9",
+    id: "tech-8",
     name: "Flexbox",
     skillLevel: 3
   },
   {
-    id: "tech-10",
+    id: "tech-9",
     name: "HTML",
     skillLevel: 3
   },
   {
-    id: "tech-11",
+    id: "tech-10",
     name: "Drupal",
     skillLevel: 3
   },
   {
-    id: "tech-12",
+    id: "tech-11",
     name: "Git",
     skillLevel: 3
   },

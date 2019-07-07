@@ -1,6 +1,7 @@
 // import PropTypes from "prop-types"
 import React from "react"
 import {tech} from "./skillsData"
+import CVLine from "./CVLine"
 
 import "../assets/css/components/skills.scss"
 
@@ -14,15 +15,13 @@ const Skills = () => (
         <h3>Tech</h3>
       </aside>
       <div className="container-full-width">
+        
         <ul className={"tech-stack stack"}>
-          <li>{tech[0].name}</li>
-          <li>Gatsby</li>
-          <li>JS</li>
-          <li>SASS</li>
-          <li>CSS</li>
-          <li>HTML</li>
-          <li>Git</li>
-          <li>Drupal</li>
+          {
+            tech.map( ( data ) => {
+              return <li>{data.name}</li>
+            } )
+          }
         </ul>
       </div>
     </section>
