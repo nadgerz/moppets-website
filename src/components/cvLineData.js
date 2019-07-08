@@ -12,7 +12,8 @@ export const cvData = [
     title: "Freelance Front End Developer and Designer",
     description:
       <>
-        <p>Kunstmatrix Tech specialises in providing online 3D art galleries but develops web pages and apps as
+        <h4>Kunstmatrix Technologies GmbH</h4>
+      <p><a href={'https://www.kunstmatrix.com/en'}>Kunstmatrix Tech</a> specialises in providing online 3D art galleries but develops web pages and apps as
           well.</p>
         <ul>
           <li>carried web projects from beginning to end: from defining requirements, handling feedback, and CMS set up
@@ -38,6 +39,10 @@ export const cvData = [
       <>
         <h4>German Press Agency, dpa infografik GmbH</h4>
         <p>(previously infographic intern in 2011)</p>
+        <p>
+          <a href="https://www.dpa.com/de/unternehmen/dpa-gruppe/dpa-infografik-gmbh/">
+          Dpa-infografik GmbH</a> is the biggest infographics agency in  the German-speaking part of Europe.
+        </p>
         <ul>
           <li>daily news graphics, diagrams, maps, edugraphics, and icons for print newspapers and school book
             publishers
