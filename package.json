@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "moppets-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A portfolio page",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Kerstin Dengl <kerstin.dengl@gmail.com>",
   "scripts": {
     "build": "gatsby build",
     "develop": "env-cmd -f .env gatsby develop",
