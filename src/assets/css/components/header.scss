@@ -1,6 +1,6 @@
-@import "../base/colors";
-@import "../base/measurements";
-@import "../abstracts/mixins";
+@import '../base/colors';
+@import '../base/measurements';
+@import '../abstracts/mixins';
 
 .nav-branding {
   a {
@@ -30,7 +30,6 @@
 //  responsive
 
 @media screen and (max-width: 550px) {
-
   #header {
     .header-right {
       border-bottom: 0;

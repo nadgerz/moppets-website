@@ -1,18 +1,12 @@
-import PropTypes from "prop-types"
-import React from "react"
-import "../assets/css/components/banner-region.scss"
+import PropTypes from 'prop-types'
+import React from 'react'
+import '../assets/css/components/banner-region.scss'
 
-
-const BannerRegion = ( { data } ) => (
+const BannerRegion = ({ data }) => (
   <div className="banner-region">
-    
-    <aside className="sidebar-left">
-      {data.img}
-    </aside>
-    
-    <div className="container-two-thirds-width">
-      {data.text}
-    </div>
+    <aside className="sidebar-left">{data.img}</aside>
+
+    <div className="container-two-thirds-width">{data.text}</div>
   </div>
 )
 

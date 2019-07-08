@@ -1,6 +1,6 @@
-@import "../base/colors";
-@import "../base/measurements";
-@import "../abstracts/mixins";
+@import '../base/colors';
+@import '../base/measurements';
+@import '../abstracts/mixins';
 
 .CVLine-content {
   display: flex;
@@ -12,7 +12,8 @@
   margin-bottom: $bottom-margin-small;
   @include border-bottom($color-grey-light);
 
-  h3, h4 {
+  h3,
+  h4 {
     text-align: left;
   }
 
@@ -24,7 +25,8 @@
     flex: 2 1;
     min-width: $container-half-width;
 
-    p, li {
+    p,
+    li {
       margin-bottom: $bottom-margin-mini;
     }
 
@@ -40,9 +42,7 @@
 //  responsive
 
 @media screen and (max-width: 550px) {
-
   .CVLine-content {
-
     .time-place {
       margin-right: 0;
       margin-bottom: $bottom-margin-small;

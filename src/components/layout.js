@@ -5,19 +5,18 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { StaticQuery, graphql } from 'gatsby'
 
-import Header from "./header"
+import Header from './header'
 
-import "../assets/css/layout.scss"
-import "../assets/css/base/resets.scss"
-import "../assets/css/base/typography.scss"
-import "../assets/css/base/styles.scss"
+import '../assets/css/layout.scss'
+import '../assets/css/base/resets.scss'
+import '../assets/css/base/typography.scss'
+import '../assets/css/base/styles.scss'
 
-
-const Layout = ( { children } ) => (
+const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -30,15 +29,14 @@ const Layout = ( { children } ) => (
       }
     `}
     render={data => (
-      <div className={"site-container"}>
-        <Header siteTitle={data.site.siteMetadata.title}/>
-        
-        <main id={"main"}>{children}</main>
-        
+      <div className={'site-container'}>
+        <Header siteTitle={data.site.siteMetadata.title} />
+
+        <main id={'main'}>{children}</main>
+
         <footer>
-          <div className="sidebar-left"/>
-          <div className={"container-half-width"}>
-            
+          <div className="sidebar-left" />
+          <div className={'container-half-width'}>
             © {new Date().getFullYear()} {data.site.siteMetadata.author}
           </div>
         </footer>

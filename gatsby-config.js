@@ -1,17 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: "Kerstin Dengl",
-    author: "Kerstin Dengl",
-    description: "Kerstin Dengl - Front-End Web Developer and Graphic Designer",
-    email: "kerstin.dengl@gmail.com",
+    title: 'Kerstin Dengl',
+    author: 'Kerstin Dengl',
+    description: 'Kerstin Dengl - Front-End Web Developer and Graphic Designer',
+    email: 'kerstin.dengl@gmail.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    "gatsby-plugin-sass",
+    'gatsby-plugin-sass',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "src",
+        name: 'src',
         path: `${__dirname}/src/`,
       },
     },

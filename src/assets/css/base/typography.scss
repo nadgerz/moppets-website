@@ -1,18 +1,18 @@
-@import "colors.scss";
+@import 'colors.scss';
 
 @font-face {
-  font-family: "MainRegular";
-  src: url(../../fonts/BarlowSemiCondensed-Regular.ttf) format("truetype");
+  font-family: 'MainRegular';
+  src: url(../../fonts/BarlowSemiCondensed-Regular.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "DisplaySemiBold";
-  src: url(../../fonts/BarlowCondensed-SemiBold.ttf) format("truetype");
+  font-family: 'DisplaySemiBold';
+  src: url(../../fonts/BarlowCondensed-SemiBold.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "DisplayMedium";
-  src: url(../../fonts/BarlowCondensed-Medium.ttf) format("truetype");
+  font-family: 'DisplayMedium';
+  src: url(../../fonts/BarlowCondensed-Medium.ttf) format('truetype');
 }
 
 //---------------------------------------------------------
@@ -29,15 +29,13 @@ $font-size-H4: $font-size-H3;
 $line-height-standard: 2.1rem;
 $line-height-double: 4.2rem;
 
-
 @mixin font-family-serif($font) {
-  font-family: $font, "Times New Roman", serif;
-};
+  font-family: $font, 'Times New Roman', serif;
+}
 
 @mixin font-family-sans-serif($font) {
-  font-family: $font, "Helvetica", "Arial", sans-serif;
-};
-
+  font-family: $font, 'Helvetica', 'Arial', sans-serif;
+}
 
 html {
   font-size: 10px;
@@ -56,7 +54,6 @@ body {
 
 //---------------------------------------------------------
 //   RESPONSIVE
-
 
 @media screen and (max-width: 860px) {
   html {
@@ -112,13 +109,17 @@ h4 {
   //margin-bottom: 0;
 }
 
-ul, ol, pre, table, blockquote {
+ul,
+ol,
+pre,
+table,
+blockquote {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 p {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 //---------------------------------------------------------

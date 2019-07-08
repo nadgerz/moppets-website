@@ -1,7 +1,6 @@
-@import "../base/colors";
-@import "../base/measurements";
-@import "../abstracts/mixins";
-
+@import '../base/colors';
+@import '../base/measurements';
+@import '../abstracts/mixins';
 
 .skill {
   //@include border-layout-solid;
@@ -25,12 +24,11 @@
       justify-content: space-between;
       align-items: center;
 
-      padding: .2rem .8rem .5rem;
+      padding: 0.2rem 0.8rem 0.5rem;
       // make sure baseline is still the same by making up for shift added by padding
-      margin: -.2rem 0 1rem;
+      margin: -0.2rem 0 1rem;
       @include border1px($color-grey-medium);
       @include removeListStyling;
-
     }
 
     .skill-bubbles {
@@ -42,17 +40,15 @@
 
       div {
         background-color: $color-grey-light;
-        height: .8rem;
-        width: .8rem;
+        height: 0.8rem;
+        width: 0.8rem;
         border-radius: 10px;
 
         &.skilled {
           background-color: $color-grey-dark;
         }
       }
-
     }
-
   }
 
   @include border-bottom($color-grey-light);

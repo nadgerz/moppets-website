@@ -1,6 +1,6 @@
-@import "../base/colors";
-@import "../base/measurements";
-@import "../abstracts/mixins";
+@import '../base/colors';
+@import '../base/measurements';
+@import '../abstracts/mixins';
 
 .contact {
   h2 {
@@ -17,7 +17,7 @@
 
     padding-bottom: $bottom-margin-medium;
     margin-bottom: $bottom-margin-small;
-    @include border-bottom($color-grey-light)
+    @include border-bottom($color-grey-light);
   }
 
   .get-in-touch {

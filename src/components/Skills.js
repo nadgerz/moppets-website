@@ -4,20 +4,18 @@ import { tech, designTools } from './skillsData'
 
 import '../assets/css/components/skills.scss'
 
-
-const createSkillIndicators = ( elem ) => {
+const createSkillIndicators = elem => {
   const MAX_SKILL_LEVEL = 6
   const skillLevel = elem.skillLevel
   const skillIndicators = []
-  
-  for ( let i = 1; i <= MAX_SKILL_LEVEL; i++ ) {
-    if ( i <= skillLevel ) {
+
+  for (let i = 1; i <= MAX_SKILL_LEVEL; i++) {
+    if (i <= skillLevel) {
       // current skill level...
-      skillIndicators.push( <div className={'skilled'} key={i}></div> )
-    }
-    else {
+      skillIndicators.push(<div className={'skilled'} key={i} />)
+    } else {
       // still to learn...
-      skillIndicators.push( <div key={i}></div> )
+      skillIndicators.push(<div key={i} />)
     }
   }
   return skillIndicators
@@ -32,24 +30,20 @@ const Skills = () => (
       </aside>
       <div className="container-full-width">
         <ul className={'tech-stack stack'}>
-          {tech.map( elem => {
-            const skillIndicators = createSkillIndicators( elem )
-            
+          {tech.map(elem => {
+            const skillIndicators = createSkillIndicators(elem)
+
             return (
-              <li key={elem.id}
-                  className={'container-third-width'}
-              >
+              <li key={elem.id} className={'container-third-width'}>
                 {elem.name}
-                <span className={'skill-bubbles'}>
-                  {skillIndicators}
-                </span>
+                <span className={'skill-bubbles'}>{skillIndicators}</span>
               </li>
             )
-          } )}
+          })}
         </ul>
       </div>
     </section>
-    
+
     {/*  D E S I G N  T O O L S  */}
     <section className="skill">
       <aside className="sidebar-left">
@@ -57,21 +51,16 @@ const Skills = () => (
       </aside>
       <div className="container-full-width">
         <ul className={'design-tools-stack stack'}>
-          {
-            designTools.map( ( elem ) => {
-              const skillIndicators = createSkillIndicators( elem )
-              
-              return (
-                <li
-                  key={elem.id}
-                  className={'container-third-width'}>
-                  {elem.name}
-                  <span className={'skill-bubbles'}>
-                    {skillIndicators}
-                  </span>
-                </li>)
-            } )
-          }
+          {designTools.map(elem => {
+            const skillIndicators = createSkillIndicators(elem)
+
+            return (
+              <li key={elem.id} className={'container-third-width'}>
+                {elem.name}
+                <span className={'skill-bubbles'}>{skillIndicators}</span>
+              </li>
+            )
+          })}
         </ul>
       </div>
     </section>

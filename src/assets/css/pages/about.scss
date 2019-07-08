@@ -1,15 +1,13 @@
-@import "../base/colors";
-@import "../base/measurements";
-@import "../abstracts/mixins";
+@import '../base/colors';
+@import '../base/measurements';
+@import '../abstracts/mixins';
 
 .about {
-
   .CV {
     display: flex;
     align-items: stretch;
     padding-bottom: $bottom-margin-small;
     margin-bottom: $bottom-margin-big;
-
   }
 
   aside {
@@ -22,11 +20,10 @@
   }
 
   .image-container {
-      margin: 0 auto;
-      //margin-left: calc (#{$sidebar-left-width} + #{$sidebar-margin-right});
+    margin: 0 auto;
+    //margin-left: calc (#{$sidebar-left-width} + #{$sidebar-margin-right});
   }
 }
 
 @media screen and (max-width: 550px) {
-
 }
