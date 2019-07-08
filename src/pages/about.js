@@ -55,7 +55,10 @@ const About = () => (
       </section>
       
       <div className={"container-two-thirds-width image-container"}>
-        <img className={"imgStrawberries"} src={strawberries} alt="three yummy strawberries"/>
+        <img className={"imgStrawberries"}
+             src={strawberries}
+             alt="three yummy strawberries"
+             aria-hidden/>
       </div>
     </div>
   </Layout>

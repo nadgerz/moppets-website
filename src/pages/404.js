@@ -16,7 +16,7 @@ const NotFoundPage = () => (
       
       {/*  I M A G E  */}
       <div className={'container-half-width image-container'}>
-        <img className={'imgBanana'} src={banana} alt="scared banana"/>
+        <img className={'imgBanana'} src={banana} alt="scared banana" aria-hidden/>
       </div>
     </div>
   </Layout>

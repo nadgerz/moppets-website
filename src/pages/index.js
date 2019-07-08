@@ -32,7 +32,11 @@ const IndexPage = () => (
     <BannerRegion data={homeData}/>
     <Portfolio/>
     <div className={"container-two-thirds-width image-container"}>
-      <img className={"imgOranges"} src={oranges} alt="cute Oranges"/>
+      <img
+        className={"imgOranges"}
+        src={oranges}
+        alt="cute Oranges"
+        aria-hidden/>
     </div>
   </Layout>
 )

@@ -53,7 +53,10 @@ const Contact = () => (
       </section>
       
       <div className={"container-two-thirds-width image-container"}>
-        <img className={"imgPineapple"} src={Pineapple} alt="Senorita Pinapple"/>
+        <img className={"imgPineapple"}
+             src={Pineapple}
+             alt="Senorita Pinapple"
+             aria-hidden/>
       </div>
     </div>
   </Layout>
