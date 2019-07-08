@@ -64,7 +64,7 @@ const Skills = () => (
               return (
                 <li
                   key={elem.id}
-                  className={'container-half-width'}>
+                  className={'container-third-width'}>
                   {elem.name}
                   <span className={'skill-bubbles'}>
                     {skillIndicators}
