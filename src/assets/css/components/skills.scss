@@ -34,7 +34,7 @@
     }
 
     .skill-bubbles {
-      width: 60%;
+      width: 10rem;
 
       display: flex;
       flex-flow: row;
@@ -50,9 +50,23 @@
           background-color: $color-grey-dark;
         }
       }
+
     }
 
   }
 
   @include border-bottom($color-grey-light);
 }
+
+//---------------------------------------------------------
+//   RESPONSIVE
+
+@media screen and (max-width: 450px) {
+  .skill {
+    li {
+      width: 80%;
+    }
+  }
+}
+
+//---------------------------------------------------------
