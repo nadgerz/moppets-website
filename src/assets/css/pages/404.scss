@@ -4,12 +4,7 @@
 
 
 .not-found-page {
-  @include border-layout-solid;
-
-  display: flex;
-  flex-flow: row wrap;
-
   .text-404 {
-
+    margin-bottom: $bottom-margin-big;
   }
 }
