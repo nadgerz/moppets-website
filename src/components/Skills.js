@@ -1,13 +1,13 @@
 // import PropTypes from "prop-types"
-import React from "react"
-import { tech } from "./skillsData"
-import CVLine from "./CVLine"
+import React from 'react'
+import { tech, software } from './skillsData'
+// import CVLine from "./CVLine"
 
-import "../assets/css/components/skills.scss"
+import '../assets/css/components/skills.scss'
 
 
 const Skills = () => (
-  <div className={"skills"}>
+  <div className={'skills'}>
     
     {/* //  T E C H */}
     <section className="skill">
@@ -16,14 +16,27 @@ const Skills = () => (
       </aside>
       <div className="container-full-width">
         
-        <ul className={"tech-stack stack"}>
+        <ul className={'tech-stack stack'}>
           {
-            tech.map( ( data ) => {
-              return <li
-                key={data.id}
-                className={"container-third-width"}>
-                {data.name}
-              </li>
+            tech.map( ( elem ) => {
+              const MAX_SKILL_LEVEL = 6
+              const skillLevel = elem.skillLevel
+              
+              return (
+                <li
+                  key={elem.id}
+                  className={'container-third-width'}>
+                  {elem.name}
+                  
+                  <span className={'skill-bubbles'}>
+                    {/*{*/}
+                    {/*for(let i = 1; i <= MAX_SKILL_LEVEL){*/}
+                    {/*<div></div>*/}
+                    
+                    {/*}*/}
+                    {/*}*/}
+                  </span>
+                </li>)
             } )
           }
         </ul>
@@ -36,14 +49,18 @@ const Skills = () => (
         <h3 className="software">Software</h3>
       </aside>
       <div className="container-full-width">
-        <ul className={"software-stack stack"}>
-          <li>Jetbrains Webstorm IDE</li>
-          <li>Sublime Text</li>
-          <li>Jira</li>
-          <li>Adobe XD</li>
-          <li>Illustrator</li>
-          <li>InDesign</li>
-          <li>Photoshop</li>
+        <ul className={'software-stack stack'}>
+          {
+            software.map( ( elem ) => {
+              return (
+                <li
+                  key={elem.id}
+                  className={'container-half-width'}>
+                  {elem.name}
+                </li>
+              )
+            } )
+          }
         </ul>
       </div>
     </section>
