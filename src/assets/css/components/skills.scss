@@ -14,28 +14,19 @@
     margin-right: $sidebar-margin-right;
   }
 
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 
-  //.container-half-width {
-  //  width: $container-half-width;
-  //  background: lavenderblush;
-  //
-  //  &:first-child {
-  //    margin-right: $container-margin;
-  //  }
-  //}
-
-  li {
-    @include removeListStyling;
+    li {
+      padding: .2rem .8rem .5rem;
+      // make sure baseline is still the same by removing padding
+      margin: -.2rem 0 1rem;
+      @include border1px($color-grey-medium);
+      @include removeListStyling;
+    }
   }
+
   @include border-bottom($color-grey-light);
-}
-
-
-.stack {
-  li {
-    display: inline-block;
-    margin: -1rem .7rem .7rem 0;
-    padding: .2rem .8rem .5rem;
-    @include border1px($color-grey-medium);
-  }
 }
