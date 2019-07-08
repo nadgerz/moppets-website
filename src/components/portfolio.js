@@ -7,7 +7,7 @@ import infographicsPDF from "../assets/pdf/2019_Portfolio_Infographics.pdf"
 import "../assets/css/components/portfolio.scss"
 
 
-const Portfolio = (  ) => (
+const Portfolio = () => (
   <>
     <section className="recent-work">
       <aside className="sidebar-left">
@@ -24,7 +24,8 @@ const Portfolio = (  ) => (
     
     <section className={"portfolios"}>
       <aside className="sidebar-left">
-        <h2>Port-folio</h2>
+        <h2>Port</h2>
+        <h2>folio</h2>
       </aside>
       
       <div className="container">
@@ -33,7 +34,7 @@ const Portfolio = (  ) => (
              href={screenPDF}
              download={`KerstinDengl_ScreenUiPortfolio`}>
             <h3>Screen/UI Design</h3>
-            DOWNLOAD PORTFOLIO
+            DOWNLOAD
           </a>
         </div>
         
@@ -42,7 +43,7 @@ const Portfolio = (  ) => (
              href={illustrationPDF}
              download={`KerstinDengl_IllustrationPortfolio`}>
             <h3>Illustration</h3>
-            DOWNLOAD PORTFOLIO
+            DOWNLOAD
           </a>
         </div>
         
@@ -51,7 +52,7 @@ const Portfolio = (  ) => (
              href={infographicsPDF}
              download={`KerstinDengl_InfographicsPortfolio`}>
             <h3>Infographics</h3>
-            DOWNLOAD PORTFOLIO
+            DOWNLOAD
           </a>
         </div>
       </div>
