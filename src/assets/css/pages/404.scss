@@ -1,0 +1,15 @@
+@import "../base/colors";
+@import "../base/measurements";
+@import "../abstracts/mixins";
+
+
+.not-found-page {
+  @include border-layout-solid;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  .text-404 {
+
+  }
+}
