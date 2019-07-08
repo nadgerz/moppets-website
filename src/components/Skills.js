@@ -6,6 +6,25 @@ import { tech } from './skillsData'
 import '../assets/css/components/skills.scss'
 
 
+const createSkillIndicators = ( elem ) => {
+  const MAX_SKILL_LEVEL = 6
+  const skillLevel = elem.skillLevel
+  const skillIndicators = []
+  
+  for ( let i = 1; i <= MAX_SKILL_LEVEL; i++ ) {
+    if ( i <= skillLevel ) {
+      // current skill level...
+      skillIndicators.push( <div className={'skilled'}
+                                 key={i}></div> )
+    }
+    else {
+      // still to learn...
+      skillIndicators.push( <div key={i}></div> )
+    }
+  }
+  return skillIndicators
+}
+
 const Skills = () => (
   <div className={'skills'}>
     {/* //  T E C H */}
@@ -16,28 +35,15 @@ const Skills = () => (
       <div className="container-full-width">
         <ul className={'tech-stack stack'}>
           {tech.map( elem => {
-            const MAX_SKILL_LEVEL = 6
-            const skillLevel = elem.skillLevel
+            const skillIndicators = createSkillIndicators( elem )
             
-            const skills = []
-            
-            for ( let i = 1; i <= MAX_SKILL_LEVEL; i++ ) {
-              // console.log(i)
-              if ( i <= skillLevel ) {
-                // current skill level...
-                skills.push( <div className={'skilled'}
-                                  key={elem.id}></div> )
-              }
-              else {
-                // still to learn...
-                skills.push( <div></div> )
-              }
-            }
             return (
-              <li key={elem.id} className={'container-third-width'}>
+              <li key={elem.id}
+                  className={'container-third-width'}
+              >
                 {elem.name}
                 <span className={'skill-bubbles'}>
-                 {skills}
+                  {skillIndicators}
                 </span>
               </li>
             )
