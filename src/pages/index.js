@@ -4,7 +4,6 @@ import React from "react"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import BannerRegion from "../components/bannerRegion"
-import Skills from "../components/Skills"
 import Portfolio from "../components/portfolio"
 import "../assets/css/pages/index.scss"
 
@@ -31,7 +30,6 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home"/>
     <BannerRegion data={homeData}/>
-    <Skills/>
     <Portfolio/>
     <div className={"container-two-thirds-width image-container"}>
       <img className={"imgOranges"} src={oranges} alt="cute Oranges"/>

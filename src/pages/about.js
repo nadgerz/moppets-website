@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 
 import BannerRegion from "../components/bannerRegion"
 import CVLine from "../components/CVLine"
+import Skills from '../components/Skills'
 import { Portrait } from "../assets/images/branding/svgs"
 import { cvData } from "../components/cvLineData"
 import cvPDF from "../assets/pdf/2019_CV.pdf"
@@ -28,7 +29,9 @@ const About = () => (
     <div className="about" id="about">
       
       <BannerRegion data={aboutData}/>
-      
+  
+      <Skills/>
+  
       <section className={"CV"}>
         
         <aside className="sidebar-left">
