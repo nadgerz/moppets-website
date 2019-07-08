@@ -70,7 +70,7 @@ export const cvData = [
         <h4>print & online media</h4>
         <p>customers included German and US companies</p>
         <ul>
-          <li>customers included German and US companies</li>
+          <li>graphic design, illustrations, infographics</li>
           <li>corporate identity & branding: from logo, letter and form design, to website layouts and business cards
           </li>
         </ul>
