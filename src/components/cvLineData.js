@@ -18,8 +18,7 @@ export const cvData = [
           <li>carried web projects from beginning to end: from defining requirements, handling feedback, and CMS set up
             to the build and deployment of a site
           </li>
-          <li>carried web projects from beginning to end: from defining requirements, handling feedback, and CMS set up
-            to the build and deployment of a site
+          <li>wireframes and layouts for app and web projects as well as prototyping websites & apps with click dummies built in AdobeXD
           </li>
           <li>screen & user interface design, illustrations and icons
           </li>
