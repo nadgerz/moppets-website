@@ -1,4 +1,4 @@
-let counter = 1;
+let counter = 1
 
 export const tech = [
   {
@@ -6,72 +6,75 @@ export const tech = [
     name: 'React',
     skillLevel: 3,
   },
+  // {
+  //   id: `tech-${counter+=1}`,
+  //   name: "Gatsby",
+  //   skillLevel: 3,
+  // },
   {
-    id: `tech-${counter+=1}`,
-    name: "Gatsby",
+    id: 'tech-3',
+    name: 'JS',
     skillLevel: 3,
   },
   {
-    id: "tech-3",
-    name: "JS",
+    id: 'tech-4',
+    name: 'SASS',
     skillLevel: 4,
   },
   {
-    id: "tech-4",
-    name: "SASS",
-    skillLevel: 3
+    id: 'tech-5',
+    name: 'CSS',
+    skillLevel: 5,
   },
   {
-    id: "tech-5",
-    name: "CSS",
-    skillLevel: 3
+    id: 'tech-6',
+    name: 'Flexbox',
+    skillLevel: 5,
   },
   {
-    id: "tech-6",
-    name: "Flexbox",
-    skillLevel: 3
+    id: 'tech-7',
+    name: 'HTML',
+    skillLevel: 5,
   },
   {
-    id: "tech-7",
-    name: "HTML",
-    skillLevel: 3
+    id: 'tech-8',
+    name: 'Drupal',
+    skillLevel: 2,
   },
   {
-    id: "tech-8",
-    name: "Drupal",
-    skillLevel: 3
-  },
-  {
-    id: "tech-9",
-    name: "Git",
-    skillLevel: 3
+    id: 'tech-9',
+    name: 'Git',
+    skillLevel: 3,
   },
 ]
 
-
-export const software = [
+export const designTools = [
   {
-    id: "software-1",
-    name: "Webstorm IDE",
+    id: 'designTools-1',
+    name: 'Adobe XD',
+    skillLevel: 4,
   },
   {
-    id: "software-2",
-    name: "Sublime Text",
+    id: 'designTools-2',
+    name: 'Illustrator',
+    skillLevel: 5,
   },
   {
-    id: "software-3",
-    name: "Jira",
+    id: 'designTools-3',
+    name: 'InDesign',
+    skillLevel: 4,
   },
   {
-    id: "software-4",
-    name: "Adobe XD",
-  },
-  {
-    id: "software-5",
-    name: "InDesign",
-  },
-  {
-    id: "software-6",
-    name: "Photoshop",
+    id: 'designTools-4',
+    name: 'Photoshop',
+    skillLevel: 3,
   },
 ]
+
+// export const software = [
+//   {
+//     id: 'designTools-1',
+//     name: 'Webstorm IDE',
+//     skillLevel: 4,
+//   },
+// ]
