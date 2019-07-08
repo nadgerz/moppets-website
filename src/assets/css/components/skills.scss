@@ -20,12 +20,38 @@
     justify-content: space-between;
 
     li {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+
       padding: .2rem .8rem .5rem;
-      // make sure baseline is still the same by removing padding
+      // make sure baseline is still the same by making up for shift added by padding
       margin: -.2rem 0 1rem;
       @include border1px($color-grey-medium);
       @include removeListStyling;
+
     }
+
+    .skill-bubbles {
+      width: 60%;
+
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+
+      div {
+        background-color: $color-grey-light;
+        height: .8rem;
+        width: .8rem;
+        border-radius: 10px;
+
+        &.skilled {
+          background-color: $color-grey-dark;
+        }
+      }
+    }
+
   }
 
   @include border-bottom($color-grey-light);
