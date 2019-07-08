@@ -11,7 +11,7 @@ export const tech = [
   {
     id: `tech-${counter+=1}`,
     name: "Gatsby",
-    skillLevel: 3
+    skillLevel: 3,
   },
   {
     id: "tech-3",
@@ -54,18 +54,26 @@ export const tech = [
 export const software = [
   {
     id: "software-1",
-    title: "Freelance Front End Developer and Designer",
-    description:
-      <ul>
-        <li>React JS</li>
-        <li>Gatsby</li>
-        <li>JS</li>
-        <li>SASS</li>
-        <li>CSS</li>
-        <li>HTML</li>
-        <li>Git</li>
-        <li>Drupal</li>
-      </ul>,
+    name: "Webstorm IDE",
   },
-
+  {
+    id: "software-2",
+    name: "Sublime Text",
+  },
+  {
+    id: "software-3",
+    name: "Jira",
+  },
+  {
+    id: "software-4",
+    name: "Adobe XD",
+  },
+  {
+    id: "software-5",
+    name: "InDesign",
+  },
+  {
+    id: "software-6",
+    name: "Photoshop",
+  },
 ]
