@@ -1,0 +1,51 @@
+@import '../base/colors';
+@import '../base/measurements';
+@import '../abstracts/mixins';
+
+.CVLine-content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  padding-bottom: $bottom-margin-small;
+  margin-bottom: $bottom-margin-small;
+  @include border-bottom($color-grey-light);
+
+  h3,
+  h4 {
+    text-align: left;
+  }
+
+  .time-place {
+    margin-right: $container-margin;
+  }
+
+  .title.description {
+    flex: 2 1;
+    min-width: $container-half-width;
+
+    p,
+    li {
+      margin-bottom: $bottom-margin-mini;
+    }
+
+    li {
+      list-style-position: inside;
+      padding-left: 2rem;
+      text-indent: -2rem;
+    }
+  }
+}
+
+//---------------------------------------------------------
+//  responsive
+
+@media screen and (max-width: 550px) {
+  .CVLine-content {
+    .time-place {
+      margin-right: 0;
+      margin-bottom: $bottom-margin-small;
+    }
+  }
+}

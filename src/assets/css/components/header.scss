@@ -1,15 +1,27 @@
-@import "../base/colors";
-@import "../base/measurements";
-@import "../abstracts/mixins";
-
+@import '../base/colors';
+@import '../base/measurements';
+@import '../abstracts/mixins';
 
 .nav-branding {
-  .logo {
-    //@include border-layout-solid;
+  a {
+    border-bottom: 0;
 
-    svg {
-      max-height: 100%;
-      max-width: 100%;
+    &:hover,
+    &:active {
+      border-bottom: 0;
+    }
+  }
+
+  svg.logo {
+    fill: $color-highlight;
+    max-height: 100%;
+    max-width: 100%;
+
+    &:hover {
+      path.bubble {
+        fill: paleturquoise;
+        transition: fill 0.5s ease;
+      }
     }
   }
 }
@@ -18,17 +30,15 @@
 //  responsive
 
 @media screen and (max-width: 550px) {
-
   #header {
-    background: none;
-
     .header-right {
       border-bottom: 0;
     }
-
     .nav-branding {
-      background: rgba(255, 255, 255, 0.8);
+      background: white;
+      //background: rgba(255, 255, 255, 0.8);
     }
   }
 }
+
 //---------------------------------------------------------

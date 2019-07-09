@@ -1,0 +1,29 @@
+@import '../base/colors';
+@import '../base/measurements';
+@import '../abstracts/mixins';
+
+.about {
+  .CV {
+    display: flex;
+    align-items: stretch;
+    padding-bottom: $bottom-margin-small;
+    margin-bottom: $bottom-margin-big;
+  }
+
+  aside {
+    margin-right: $sidebar-margin-right;
+
+    .download-cv {
+      @include downloadButton;
+      width: 100%;
+    }
+  }
+
+  .image-container {
+    margin: 0 auto;
+    //margin-left: calc (#{$sidebar-left-width} + #{$sidebar-margin-right});
+  }
+}
+
+@media screen and (max-width: 550px) {
+}

@@ -1,0 +1,17 @@
+@import '../base/colors';
+@import '../base/measurements';
+@import '../abstracts/mixins';
+
+.image-container {
+  .imgOranges {
+    margin-left: calc(#{$sidebar-margin-right} + #{$sidebar-left-width});
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .image-container {
+    .imgOranges {
+      margin-left: 0;
+    }
+  }
+}

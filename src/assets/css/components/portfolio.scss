@@ -1,0 +1,55 @@
+@import '../base/colors';
+@import '../base/measurements';
+@import '../abstracts/mixins';
+
+.recent-work {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: $bottom-margin-small;
+  margin-bottom: $bottom-margin-small;
+  @include border-bottom($color-grey-light);
+
+  aside {
+    margin-right: $sidebar-margin-right;
+  }
+
+  .clients li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.portfolios {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: $bottom-margin-mini;
+  margin-bottom: $bottom-margin-big;
+  @include border-bottom($color-grey-light);
+
+  aside {
+    margin-right: $sidebar-margin-right;
+    overflow-wrap: break-word;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    .download-button {
+      height: 9rem;
+      @include downloadButton;
+      //margin-right: $container-margin;
+    }
+  }
+}
+
+//---------------------------------------------------------
+//  responsive
+
+@media screen and (max-width: 660px) {
+  .container {
+  }
+}
